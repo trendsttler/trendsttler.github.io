@@ -1,0 +1,279 @@
+@media screen and (max-width: 768px) {
+    .insight-premium-body h1 {
+        line-height: 35px;
+        font-size: 28px;
+    }
+    .insight-premium-body .insight-premium .bold-info {
+        max-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .insight-premium-body .insight-premium h1 {
+        line-height: 30px;
+        font-size: 24px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+.insight-premium-body {
+    background: #FF4E85;
+    color: #fff;
+}
+
+.insight-premium-body .navbar .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.insight-premium-body .insight-premium {
+    width: 100%;
+    background: transparent;
+    background-position: center;
+    color: white;
+    font-family: 'sf_ui_displaysemibold';
+    padding-top: 49px;
+    text-align: center;
+}
+
+.insight-premium-body .insight-premium .head {
+    color: white;
+    font-size: 18px;
+    opacity: .7;
+    margin-bottom: 24px;
+}
+
+.insight-premium-body .navbar-nav .nav-item .nav-link {
+    padding: 0px 15px;
+    color: #FFF;
+    font-family: 'sf_ui_displayregular';
+    font-size: 16px;
+}
+
+.insight-premium-body .navbar-dark .navbar-nav .active>.nav-link {
+    color: #9D3052;
+}
+
+.insight-premium-body .btn-outline-primary.menu-btn {
+    color: #FFF;
+    border-color: #FFF;
+    position: relative;
+    padding: 8px 25px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'sf_ui_displaysemibold';
+    top: -2px;
+}
+
+.insight-premium-body .btn-outline-primary.menu-btn:hover {
+    background-color: #9D3052;
+    border-color: #9D3052;
+}
+
+.insight-premium-body .premium_description {
+    text-align: left;
+    margin-top: 50px;
+    line-height: 24px;
+    font-size: 18px;
+    font-family: 'sf_ui_displayregular';
+}
+
+.insight-premium-body .premium_description .text-block-left {
+    max-width: 323px;
+    margin-left: auto;
+}
+
+.insight-premium-body .premium_description .text-block-right {
+    max-width: 325px;
+    margin-right: auto;
+}
+
+.insight-premium-body .premium_description p {
+    margin-bottom: 24px;
+    ;
+}
+
+.insight-premium-body .video-box {
+    margin-top: 190px;
+}
+
+.insight-premium-body .video-box img {
+    width: 100%;
+}
+
+.insight-premium-body .video-box-lg {
+    display: block;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.insight-premium-body .video-box-md, .insight-premium-body .video-box-sm {
+    display: none;
+}
+
+/* =============feature-images============= */
+
+.insight-premium-body .feature-images {
+    margin-top: 101px;
+    margin-bottom: 300px;
+}
+
+.insight-premium-body .feature-images img {
+    max-width: 300px;
+}
+
+.insight-premium-body .feature-images .above-image {
+    text-align: right;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 28px;
+}
+
+.insight-premium-body .feature-images .above-image span {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'sf_ui_displayregular';
+    margin-top: 17px;
+}
+
+.insight-premium-body .feature-images h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'sf_ui_displaybold';
+    margin-top: 17px;
+}
+
+.insight-premium-body .feature-images .down-image {
+    text-align: left;
+    max-width: 240px;
+    margin-right: auto;
+    margin-left: 40px;
+    margin-bottom: 28px;
+    padding-top: 195px;
+}
+
+.insight-premium-body .feature-images .down-image span {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'sf_ui_displayregular';
+    margin-top: 17px;
+}
+
+.insight-premium-body .feature-images .down-image-md {
+    text-align: center;
+    display: none;
+    margin-top: 28px;
+}
+
+.insight-premium-body .feature-images .image-left {
+    text-align: right;
+}
+
+.insight-premium-body .feature-images .image-right {
+    text-align: left;
+    margin: 0;
+}
+
+/* ====================elephant================= */
+
+.insight-premium-body .elephant {
+    background-color: #fff;
+    padding: 66px 60px;
+    color: #414141;
+    padding-bottom: 137px;
+    margin-bottom: 36px;
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+.insight-premium-body .elephant img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.insight-premium-body .elephant p {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'sf_ui_displayregular';
+    max-width: 357px;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0 auto;
+}
+
+.insight-premium-body .elephant .img-description {
+    display: table;
+    height: 100%;
+}
+
+/* ==========elephant-link============== */
+
+.elephant-link {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 455px;
+}
+
+@media screen and (max-width: 767px) {
+    .insight-premium-body .premium_description .text-block-left {
+        max-width: 325px;
+        margin: 0 auto;
+    }
+    .insight-premium-body .premium_description .text-block-right {
+        max-width: 325px;
+        margin: 0 auto;
+    }
+    .insight-premium-body .video-box-md {
+        display: block;
+    }
+    .insight-premium-body .feature-images .above-image {
+        text-align: center;
+        max-width: 240px;
+        margin: 0 auto;
+        margin-top: 28px;
+    }
+    .insight-premium-body .feature-images .down-image {
+        text-align: center;
+        max-width: 240px;
+        margin: 0 auto;
+        margin-bottom: 0;
+        display: none;
+    }
+    .insight-premium-body .feature-images .down-image-md {
+        text-align: center;
+        max-width: 240px;
+        margin: 0 auto;
+        margin-top: 28px;
+        display: block;
+    }
+    .insight-premium-body .image-left {
+        text-align: center !important;
+    }
+    .insight-premium-body .image-right {
+        text-align: center !important;
+        margin-top: 100px !important;
+    }
+    .insight-premium-body .video-box-lg, .insight-premium-body .video-box-sm {
+        display: none;
+    }
+    .insight-premium-body .elephant .img-ele {
+        text-align: center;
+    }
+    .insight-premium-body .elephant p {
+        padding-top: 137px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .insight-premium-body .video-box-md, .insight-premium-body .video-box-lg {
+        display: none;
+    }
+    .insight-premium-body .video-box-sm {
+        display: block;
+    }
+}

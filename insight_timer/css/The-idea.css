@@ -1,0 +1,95 @@
+
+.the-idea-body .navbar-dark .navbar-nav .active>.nav-link{
+    color: grey;
+}
+
+.the-idea-body .the-idea {
+    margin-top: 68px;
+}
+.the-idea-body .the-idea h1{
+    max-width: 612px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+}
+.the-idea-body .the-idea-image {
+    text-align: center;
+    margin-top: 137px;
+}
+.the-idea-body .the-idea-image img{
+    max-width: 278px;
+    width: 100%;
+}
+
+.the-idea-body .the-idea-image .the-idea-description h1{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'sf_ui_displayregular';
+    color: #197979;
+    margin-top: 12px;
+}
+
+.the-idea-body .the-idea-image .the-idea-description p{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'sf_ui_displayregular';
+    max-width: 306px;
+    margin: 0 auto;
+    color: #7B7B7B;
+    margin-top: 12px;
+}
+
+.the-idea-body .the-idea-left-des{
+    margin-top:65px;
+    text-align: right;
+}
+.the-idea-body .the-idea-left-des p{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'sf_ui_displayregular';
+    max-width: 424px;
+    margin: 0 auto;
+    color: #797979;
+}
+
+
+.the-idea-body .the-idea-mid-detail{
+    font-family: 'sf_ui_displayregular';
+    max-width: 330px;
+    margin: 0 auto;
+    margin-top: 640px;
+    margin-bottom: 596px;
+}
+.the-idea-body .the-idea-mid-detail h1{
+    font-size: 30px;
+    Line-height: 36px;
+    color: #252525;
+    font-family: 'sf_ui_displaybold';
+    margin-bottom: 23px;
+}
+.the-idea-body .the-idea-mid-detail p{
+    font-size: 18px;
+    Line-height: 28px;
+    color: #000;
+    font-family: 'sf_ui_displayregular';
+}
+.the-idea-body .the-idea-mid-detail h3{
+    font-size: 20px;
+    Line-height: 28px;
+    color: #000;
+    font-family: 'sf_ui_displaybold';
+}
+
+@media screen and (max-width:768px){
+    .the-idea-body .the-idea-left-des{
+        text-align: center;
+    }
+    
+.the-idea-body .the-idea-mid-detail{
+    font-family: 'sf_ui_displayregular';
+    max-width: 330px;
+    margin: 0 auto;
+    margin-top: 350px;
+    margin-bottom: 300px;
+}
+}

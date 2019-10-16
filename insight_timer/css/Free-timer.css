@@ -1,0 +1,178 @@
+
+.free-timer-body .navbar .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.free-timer-body .navbar-dark .navbar-nav .active>.nav-link {
+    color: #B2B2B2;
+}
+
+.free-timer-body h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0;
+}
+
+body > .free-timer-body {
+    background-image: url("../images/free_timer/Top-background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #191919;
+}
+
+.free-timer-body .block-heading {
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'sf_ui_displaysemibold';
+    text-align: center;
+}
+
+.free-timer-body .block-description {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'sf_ui_displayregular';
+    text-align: center;
+    opacity: .7;
+}
+
+/* dfdf */
+
+.peace-top {
+    color: #fff;
+    text-align: center;
+    margin-top: 86px;
+}
+
+.peace-top .block-heading {
+    margin-bottom: 27px;
+}
+
+.peace-top .block-description {
+    max-width: 562px;
+    margin: 0 auto;
+}
+
+.peace-top .peace-img {
+    margin-bottom: 152px;
+}
+
+.peace-top .peace-img img {
+    max-width: 383px;
+    margin: 0 auto;
+    margin-top: 62px;
+}
+
+.peace-top .peace-img hr {
+    max-width: 521px;
+    margin: 0 auto;
+    background: #838383;
+}
+
+.peace-top .bowl-img {
+    margin-bottom: 212px;
+}
+
+.peace-top .bowl-img img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+.slider-1 {
+    margin-bottom: 175px;
+}
+
+#owl-carousel .item {
+    margin: 0px auto;
+    ;
+    color: #FFF;
+    text-align: center;
+    max-width: 300px;
+}
+
+.peace-top .servicebox {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.peace-top .servicebox h3 {
+    font-family: 'sf_ui_displaybold';
+    font-size: 24px;
+    color: #414141;
+    line-height: 46px;
+    margin-top: 37px;
+}
+
+.peace-top .servicebox p {
+    font-family: 'sf_ui_displayregular';
+    font-size: 14px;
+    width: 240px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 17px;
+    color: #414141;
+}
+
+.browse-link {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'sf_ui_displayregular';
+    color: #fff;
+    margin-bottom: 76px;
+}
+
+.mid-app-screens {
+    margin: 0 -15px;
+    margin-bottom: 450px;
+}
+
+.mid-app-screens img {
+    width: 100%;
+}
+
+.mid-group-lg {
+    display: inline-block;
+}
+
+.mid-group-sm {
+    display: none;
+}
+
+@media screen and (max-width:568px) {
+
+    .peace-top .peace-img img {
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: 62px;
+    }
+    .peace-top .bowl-img {
+        margin-bottom: 150px;
+    }
+    .peace-top .peace-img {
+        margin-bottom: 100px;
+    }
+    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+        display: block;
+    }
+    .slider-1 {
+        margin-bottom: 125px;
+    }
+    .mid-group-lg {
+        display: none;
+    }
+    .mid-group-sm {
+        display: inline-block;
+    }
+    .owl-carousel .owl-item img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .free-timer-body h1 {
+        line-height: 30px;
+    font-size: 24px;
+}
+
+}

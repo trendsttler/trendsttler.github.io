@@ -1,0 +1,185 @@
+/* Camparission of insight with other */
+
+
+.green-box .comparision .insight{
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    color: #197979;
+    font-size: 12px;
+    text-align: right;
+    vertical-align: middle;
+    height: 90px;
+    position: relative;
+    font-family: 'sf_ui_displaybold';
+}
+.green-box .comparision .insight span{
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    right: 25px;
+    line-height: 29;
+    letter-spacing: 1px;
+}
+
+.green-box .comparision-other{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    position: relative;
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: 'sf_ui_displaybold';
+}
+.green-box .comparision-other .HEADSPACE span{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    position: absolute;
+    letter-spacing: 1px;
+}
+.green-box .comparision-other .OTHER span{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    position: absolute;
+    letter-spacing: 1px;
+}
+.green-box .comparision-other .CALM span{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    position: absolute;
+    letter-spacing: 1px;
+}
+.green-box .comparision-other .CALM{
+    background-image: linear-gradient(-90deg,#0E426F, #1B83DD );
+    width: 39%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    position: relative;
+}
+.green-box .comparision-other .HEADSPACE{
+    background-image: linear-gradient(-90deg,#FF8D50, #F06820 );
+    width: 16%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    position: relative;
+}
+.green-box .comparision-other .OTHER{
+    background-image: linear-gradient(-90deg,#6F2424, #DE4747 );
+    width: 30%;
+    border-top-RIGHT-radius: 6px;
+    border-bottom-RIGHT-radius: 6px;
+    position: relative;
+    margin-left: -1px;
+}
+.green-box .comparision-mob .insight{
+    width: 90px;
+    background: #fff;
+    border-radius: 6px;
+    color: #197979;
+    font-size: 12px;
+    text-align: right;
+    vertical-align: middle;
+    height: 460px;
+    position: relative;
+    margin-right: 7px;
+    font-family: 'sf_ui_displaybold';
+}
+
+.green-box .comparision-mob .insight span{
+    transform: translatex(-50%);
+    left: 50%;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+.green-box .comparision-other-mob{
+    width: 90px;
+    height: 460px;;
+    position: relative;
+    font-size: 12px;
+    margin-left: 7px;
+    font-family: 'sf_ui_displaybold';
+}
+
+.green-box .comparision-other-mob .HEADSPACE span{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    position: absolute;
+    letter-spacing: 1px;
+}
+.green-box .comparision-other-mob .OTHER span{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    position: absolute;
+    letter-spacing: 1px;
+}
+.green-box .comparision-other-mob .CALM span{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    position: absolute;
+    letter-spacing: 1px;
+}
+.green-box .comparision-other-mob .space span{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    position: absolute;
+    letter-spacing: 1px;opacity: .01;
+}
+
+.green-box .comparision-other-mob .space{
+    height: 15%;
+    position: relative;
+    color: #197979;
+}
+.green-box .comparision-other-mob .CALM{
+    background-image: linear-gradient(0deg,#0E426F, #1B83DD );
+    height: 39%;
+    border-bottom-left-radius: 6px;
+    border-bottom-RIGHT-radius: 6px;
+    position: relative;
+}
+.green-box .comparision-other-mob .HEADSPACE{
+    background-image: linear-gradient(0deg,#FF8D50, #F06820 );
+    height: 16%;
+    border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    position: relative;
+}
+.green-box .comparision-other-mob .OTHER{
+    background-image: linear-gradient(0deg,#6F2424, #DE4747 );
+    height: 30%;
+    border-top-RIGHT-radius: 6px;
+    border-top-left-radius: 6px;
+    position: relative;
+}
+
+
+
+.green-box .comparision.green-box,.comparision-other{
+    display:inline-block;
+}
+.green-box .comparision-mob, .comparision-other-mob, .think-us a{
+    display:none;
+}
+@media screen and (max-width:568px){
+    .green-box .comparision,.green-box .comparision-other, .Why-us, .learn-why{
+        display:none;
+    }
+    .green-box .comparision-box-mob{
+        margin-top: 52px;
+    }
+    .green-box .comparision-mob, .comparision-other-mob, .think-us a{
+        display:inline-block;
+    }
+
+}
