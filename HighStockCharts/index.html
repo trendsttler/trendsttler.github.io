@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body class="text-center">
+
+
+    <h1 class="mt-5">Type 1</h1>
+    <div id="container" style="height: 400px"></div>
+    <h1 class="mt-5">Type 2</h1>
+    <div id="typeTwo" style="height: 400px"></div>
+    <h1 class="mt-5">Type 3</h1>
+    <div id="typeThree" style="height: 400px"></div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+
+
+    <script>
+        // type 1
+        Highcharts.getJSON('./sampleOne.json', function (data) {
+
+            // Create the chart
+            Highcharts.stockChart('container', {
+
+                rangeSelector: {
+                    selected: 1
+                },
+
+                title: {
+                    text: 'Type 1'
+                },
+
+                series: [{
+                    name: 'Test Series',
+                    data: data,
+                    type: 'spline',
+                    tooltip: {
+                        valueDecimals: 2
+                    }
+                }]
+            });
+        });
+
+
+
+        // type 2
+        Highcharts.getJSON('./sampleTwo.json', function (data) {
+
+            var ohlc = [],
+                volume = [],
+                dataLength = data.length,
+                groupingUnits = [[
+                    'week',
+                    [1]
+                ], [
+                    'month',
+                    [1, 2, 3, 4, 6]
+                ]],
+
+                i = 0;
+
+            for (i; i < dataLength; i += 1) {
+                ohlc.push([
+                    data[i][0], // the date
+                    data[i][1], // open
+                    data[i][2], // high
+                    data[i][3], // low
+                    data[i][4] // close
+                ]);
+
+                volume.push([
+                    data[i][0], // the date
+                    data[i][5] // the volume
+                ]);
+            }
+
+
+            // create the chart
+            Highcharts.stockChart('typeTwo', {
+
+                rangeSelector: {
+                    selected: 1
+                },
+
+                title: {
+                    text: 'Type 2'
+                },
+
+                yAxis: [{
+                    labels: {
+                        align: 'right',
+                        x: -3
+                    },
+                    title: {
+                        text: 'OHLC'
+                    },
+                    height: '60%',
+                    lineWidth: 2,
+                    resize: {
+                        enabled: true
+                    }
+                }, {
+                    labels: {
+                        align: 'right',
+                        x: -3
+                    },
+                    title: {
+                        text: 'Volume'
+                    },
+                    top: '65%',
+                    height: '35%',
+                    offset: 0,
+                    lineWidth: 2
+                }],
+
+                tooltip: {
+                    split: true
+                },
+
+                series: [{
+                    type: 'candlestick',
+                    name: 'name',
+                    data: ohlc,
+                    dataGrouping: {
+                        units: groupingUnits
+                    }
+                }, {
+                    type: 'column',
+                    name: 'Volume',
+                    data: volume,
+                    yAxis: 1,
+                    dataGrouping: {
+                        units: groupingUnits
+                    }
+                }]
+            });
+        });
+
+        // Type 3
+
+        Highcharts.getJSON('./sampleThree.json', function (data) {
+
+            // create the chart
+            Highcharts.stockChart('typeThree', {
+
+
+                rangeSelector: {
+                    selected: 1
+                },
+
+                title: {
+                    text: 'Type 3'
+                },
+
+                series: [{
+                    type: 'candlestick',
+                    name: 'Name',
+                    data: data,
+                    dataGrouping: {
+                        units: [
+                            [
+                                'week', // unit name
+                                [1] // allowed multiples
+                            ], [
+                                'month',
+                                [1, 2, 3, 4, 6]
+                            ]
+                        ]
+                    }
+                }]
+            });
+        });
+    </script>
+</body>
+
+</html>
