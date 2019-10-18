@@ -7,17 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 00;
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body class="text-center">
 
-
-    <h1 class="mt-5">Type 1</h1>
-    <div id="container" style="height: 400px"></div>
     <h1 class="mt-5">Type 2</h1>
     <div id="typeTwo" style="height: 400px"></div>
-    <h1 class="mt-5">Type 3</h1>
-    <div id="typeThree" style="height: 400px"></div>
+
 
 
 
@@ -32,30 +36,6 @@
 
 
     <script>
-        // type 1
-        Highcharts.getJSON('./sampleOne.json', function (data) {
-
-            // Create the chart
-            Highcharts.stockChart('container', {
-
-                rangeSelector: {
-                    selected: 1
-                },
-
-                title: {
-                    text: 'Type 1'
-                },
-
-                series: [{
-                    name: 'Test Series',
-                    data: data,
-                    type: 'spline',
-                    tooltip: {
-                        valueDecimals: 2
-                    }
-                }]
-            });
-        });
 
 
 
@@ -93,35 +73,96 @@
 
             // create the chart
             Highcharts.stockChart('typeTwo', {
-
+                chart: {
+                    backgroundColor: 'rgb(33, 38, 39)'
+                },
                 rangeSelector: {
+                    buttonTheme: { // styles for the buttons
+                        fill: '#ffffff',
+                        stroke: 'none',
+                        'stroke-width': 0,
+                        r: 8,
+                        style: {
+                            color: '#039',
+                            fontWeight: 'bold'
+                        },
+                        states: {
+                            hover: {
+                            },
+                            select: {
+                                fill: 'tomato',
+                                style: {
+                                    color: 'white'
+                                }
+                            }
+                            // disabled: { ... }
+                        }
+                    },
+                    inputBoxBorderColor: '#ffffff',
+                    inputBoxWidth: 120,
+                    inputBoxHeight: 18,
+                    inputStyle: {
+                        color: '#ffffff',
+                        fontWeight: 'bold'
+                    },
+                    labelStyle: {
+                        color: 'tomato',
+                        fontWeight: 'bold'
+                    },
                     selected: 1
                 },
 
-                title: {
-                    text: 'Type 2'
+                plotOptions: {
+                    candlestick: {
+                        lineColor: '#ffffff',
+                        upLineColor: '#ffffff', // docs
+                        tooltip: {
+                            dateTimeLabelFormats: 1
+                        }
+                    }
+                },
+
+                xAxis: {
+                    labels: {
+                        style: {
+                            color: '#ffffff'
+                        }
+                    }
                 },
 
                 yAxis: [{
                     labels: {
                         align: 'right',
-                        x: -3
+                        x: -3,
+                        style: {
+                            color: 'white'
+                        }
                     },
                     title: {
-                        text: 'OHLC'
+                        text: 'OHLC',
+                        style: {
+                            color: 'tomato'
+                        }
                     },
                     height: '60%',
                     lineWidth: 2,
                     resize: {
                         enabled: true
-                    }
+                    },
+                    backgroundColor: "#00ff00"
                 }, {
                     labels: {
                         align: 'right',
-                        x: -3
+                        x: -3,
+                        style: {
+                            color: 'white'
+                        }
                     },
                     title: {
-                        text: 'Volume'
+                        text: 'Volume',
+                        style: {
+                            color: 'cyan'
+                        }
                     },
                     top: '65%',
                     height: '35%',
@@ -133,13 +174,18 @@
                     split: true
                 },
 
+
+
                 series: [{
                     type: 'candlestick',
                     name: 'name',
                     data: ohlc,
                     dataGrouping: {
                         units: groupingUnits
-                    }
+                    },
+                    color: 'tomato'
+
+
                 }, {
                     type: 'column',
                     name: 'Volume',
@@ -147,45 +193,19 @@
                     yAxis: 1,
                     dataGrouping: {
                         units: groupingUnits
-                    }
+                    },
+                    color: 'cyan'
                 }]
             });
         });
 
-        // Type 3
-
-        Highcharts.getJSON('./sampleThree.json', function (data) {
-
-            // create the chart
-            Highcharts.stockChart('typeThree', {
 
 
-                rangeSelector: {
-                    selected: 1
-                },
 
-                title: {
-                    text: 'Type 3'
-                },
 
-                series: [{
-                    type: 'candlestick',
-                    name: 'Name',
-                    data: data,
-                    dataGrouping: {
-                        units: [
-                            [
-                                'week', // unit name
-                                [1] // allowed multiples
-                            ], [
-                                'month',
-                                [1, 2, 3, 4, 6]
-                            ]
-                        ]
-                    }
-                }]
-            });
-        });
+
+
+
     </script>
 </body>
 
