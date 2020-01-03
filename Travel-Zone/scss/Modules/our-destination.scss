@@ -1,0 +1,175 @@
+.our-destination {
+    background-image: linear-gradient(135deg, #fff, #ebebeb);
+    text-align: center;
+    padding: 60px 0;
+    padding-top: 90px;
+
+    h2 {
+        font-size: 38px;
+        line-height: 44px;
+        font-family: $font-roboto;
+        font-weight: bold;
+        color: #f68948;
+        margin-bottom: 10px;
+    }
+
+    &>p {
+        max-width: 470px;
+        font-size: 22px;
+        line-height: 27px;
+        margin: 0 auto;
+        color: #857d7c;
+    }
+
+    .destinations {
+        padding-left: 5%;
+        margin-top: 100px;
+
+        .owl-carousel .owl-item {
+            padding: 0 25px;
+        }
+
+        .owl-carousel .owl-item img {
+            display: block;
+            width: 100%;
+            box-shadow: 0 5px 25px #f68948a1;
+        }
+
+        .owl-carousel .owl-stage {
+            padding: 40px 0;
+        }
+
+        .card-flip {
+            .back {
+                padding-top: 20px;
+
+                .like-btn {
+                    background-image: url("../images/icons/Heart.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position-x: right;
+                    padding: 16px;
+                    position: relative;
+                    left: auto;
+                    text-align: right;
+                    display: block;
+                }
+
+                .like-btn.outline {
+                    background-image: url("../images/icons/Heart-outline.png");
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1500px) {
+        .destinations {
+            .card-flip .back {
+                h2 {
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 20px;
+                    margin-bottom: 15px;
+                }
+
+                .location-details {
+                    font-size: 13px;
+                    line-height: 18px;
+                }
+
+                .like-btn {
+                    padding: 10px;
+                }
+
+                .readmore {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        .destinations {
+            .card-flip .back .location-details {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        .destinations {
+            margin-top: 60px;
+        }
+
+        &>p {
+            max-width: 470px;
+            font-size: 19px;
+        }
+
+        & {
+            padding: 50px 0;
+        }
+    }
+
+
+    @media screen and (max-width: 992px) {
+        .destinations {
+            .card-flip .back {
+                padding: 30px 10px;
+
+                h2 {
+                    margin-bottom: 7px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                .location-details {
+                    font-size: 13px;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 30px;
+            line-height: 34px;
+
+        }
+
+        &>p {
+            max-width: 50%;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+    }
+
+    @media screen and (max-width: 568px) {
+        &>p {
+            max-width: 80%;
+        }
+
+        .destinations {
+            margin-top: 10px;
+
+            .owl-carousel .owl-item {
+                padding: 0 15px;
+            }
+        }
+
+
+    }
+}

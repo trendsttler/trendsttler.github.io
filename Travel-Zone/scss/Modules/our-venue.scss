@@ -1,0 +1,149 @@
+.our-venue {
+    padding: 60px 0;
+    padding-top: 95px;
+    background-image: linear-gradient(170deg, #b71f00cc 0, #e03102cc 70%, #df2e00cc 100%);
+    text-align: center;
+
+    h2 {
+        font-size: 38px;
+        line-height: 44px;
+        font-family: $font-roboto;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    &>p {
+        max-width: 470px;
+        font-size: 22px;
+        line-height: 27px;
+        margin: 0 auto;
+        color: #ffd5cf;
+    }
+
+    .bg-img {
+        max-height: calc(25vw - 30px);
+        overflow-y: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .destination-packeges {
+        margin-top: 60px;
+
+
+    }
+
+    .discription {
+        position: absolute;
+        border: 0;
+        bottom: 0;
+        width: calc(100% - 30px);
+        display: flex;
+        background-image: linear-gradient(#3330 0%, #000000ab 40%);
+        font-family: $font-lato;
+    }
+
+    .discription.intro .btn-arrow {
+        transform: rotate(90deg);
+        transition: 0.5s;
+    }
+
+    .name {
+        width: 70%;
+        text-align: left;
+        padding: 10px 10px;
+        color: #fff;
+
+        h3 {
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 21px;
+            font-family: $font-roboto;
+            opacity: 0.7;
+        }
+    }
+
+    .btn-arrow {
+        background: transparent;
+        border: 0;
+        padding: 10px 20px;
+        transition: 0.5s;
+    }
+
+    .arrow {
+        width: 30%;
+        text-align: right;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    @media screen and (max-width: 1440px) {
+        .name {
+            h3 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .name {
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .venue {
+            margin-top: 30px;
+        }
+
+        .name {
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .bg-img {
+            max-height: calc(50vw - 30px);
+        }
+    }
+
+    @media screen and (max-width: 568px) {
+        .bg-img {
+            max-height: calc(100vw - 30px);
+        }
+        & > p {
+          max-width: 90vw;
+        }
+        .name {
+            h3 {
+                font-size: 34px;
+            }
+            p {
+              font-size: 20px;
+          }
+        }
+    }
+}

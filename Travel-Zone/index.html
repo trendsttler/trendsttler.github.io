@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Zone</title>
+
+
+    <!-- ===================== BOOTSTRAP ===================================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <!-- ===================== Owl carosal ============================= -->
+    <link rel="stylesheet" href="css/owl-carusal/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl-carusal/owl.theme.default.css" />
+    <!-- ===================== Custom ============================= -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+
+
+    <!--  ===========================
+            navbar section
+    ========================== -->
+    <nav class="navbar navbar-expand-md custom-nav">
+
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="logo-icon" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item nav-link">
+                    <a class=" border-bottom-anim" href="#">BOOKING</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button type="button" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            DESTINATION
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item nav-link">
+                    <a class=" border-bottom-anim" href="#">FLIGHT</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a class=" border-bottom-anim" href="#">HOTELS</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a class=" border-bottom-anim" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a class=" border-bottom-anim" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a class=" " href="#"><img src="images/icons/Search.png"></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!--==========================
+                carosal
+    ========================= -->
+    <div class="carousel-wrap">
+
+        <div class="owl-carousel" id="topCarosal">
+
+            <div class="item">
+                <img class="carosal-background" src="images/top/slider-1.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img class="carosal-background" src="images/top/slider-2.jpg" alt="" />
+            </div>
+            <div class="item">
+                <img class="carosal-background" src="images/top/slider-3.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+
+
+    <!--==========================
+            Our Destination
+    ========================= -->
+    <section class="our-destination">
+        <h2>
+            Our Destination
+        </h2>
+        <p>
+            Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt
+        </p>
+        <div class="destinations">
+            <div class="owl-carousel" id="destinations">
+
+                <div class="item">
+                    <div class="card-flip">
+                        <div class="for-flip">
+                            <div class="front">
+                                <img class="carosal-background" src="images/destination/blue-sky.png" alt="" />
+                                <div class="name">
+                                    Miyami
+                                </div>
+                            </div>
+                            <div class="back">
+                                <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                <h2>
+                                    Miyami
+                                </h2>
+                                <p>lorem ipsum odlar</p>
+                                <div class="location-details">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Adipisci unde optio
+                                    accusantium molestias ut, vel veritatis
+                                    doloremque pariatur sed impedit, quo
+                                    rerum
+                                    modi molestiae nemo ipsum velit.
+                                </div>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card-flip">
+                        <div class="for-flip">
+                            <div class="front">
+                                <img class="carosal-background" src="images/destination/paris.png" alt="" />
+                                <div class="name">
+                                    Miyami
+                                </div>
+                            </div>
+                            <div class="back">
+                                <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                <h2>
+                                    Miyami
+                                </h2>
+                                <p>lorem ipsum odlar</p>
+                                <div class="location-details">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Adipisci unde optio
+                                    accusantium molestias ut, vel veritatis
+                                    doloremque pariatur sed impedit, quo
+                                    rerum
+                                    modi molestiae nemo ipsum velit.
+                                </div>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card-flip">
+                        <div class="for-flip">
+                            <div class="front">
+                                <img class="carosal-background" src="images/destination/sea-roks.png" alt="" />
+                                <div class="name">
+                                    Miyami
+                                </div>
+                            </div>
+                            <div class="back">
+                                <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                <h2>
+                                    Miyami
+                                </h2>
+                                <p>lorem ipsum odlar</p>
+                                <div class="location-details">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Adipisci unde optio
+                                    accusantium molestias ut, vel veritatis
+                                    doloremque pariatur sed impedit, quo
+                                    rerum
+                                    modi molestiae nemo ipsum velit.
+                                </div>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card-flip">
+                        <div class="for-flip">
+                            <div class="front">
+                                <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                <div class="name">
+                                    Miyami
+                                </div>
+                            </div>
+                            <div class="back">
+                                <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                <h2>
+                                    Miyami
+                                </h2>
+                                <p>lorem ipsum odlar</p>
+                                <div class="location-details">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Adipisci unde optio
+                                    accusantium molestias ut, vel veritatis
+                                    doloremque pariatur sed impedit, quo
+                                    rerum
+                                    modi molestiae nemo ipsum velit.
+                                </div>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="card-flip">
+                        <div class="for-flip">
+                            <div class="front">
+                                <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                <div class="name">
+                                    Miyami
+                                </div>
+                            </div>
+                            <div class="back">
+                                <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                <h2>
+                                    Miyami
+                                </h2>
+                                <p>lorem ipsum odlar</p>
+                                <div class="location-details">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Adipisci unde optio
+                                    accusantium molestias ut, vel veritatis
+                                    doloremque pariatur sed impedit, quo
+                                    rerum
+                                    modi molestiae nemo ipsum velit.
+                                </div>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="card-flip">
+                        <div class="for-flip">
+                            <div class="front">
+                                <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                <div class="name">
+                                    Miyami
+                                </div>
+                            </div>
+                            <div class="back">
+                                <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                <h2>
+                                    Miyami
+                                </h2>
+                                <p>lorem ipsum odlar</p>
+                                <div class="location-details">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Adipisci unde optio
+                                    accusantium molestias ut, vel veritatis
+                                    doloremque pariatur sed impedit, quo
+                                    rerum
+                                    modi molestiae nemo ipsum velit.
+                                </div>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--==========================
+             Our Venue
+    ========================= -->
+    <section class="our-venue">
+        <h2>
+            Our Venues
+        </h2>
+        <p>
+            Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt
+        </p>
+
+        <div class="container-fluid destination-packeges">
+            <div class="row">
+                <div class=" col-sm-6 col-md-3">
+                    <div class="venue">
+                        <div class="bg-img">
+                            <img src="images/destination/beach.png" />
+                            <div class="name">
+                                Miyami
+                            </div>
+                        </div>
+                        <div class="discription">
+                            <div class="name">
+                                <h3>Miyami</h3>
+                                <p> 4 Types Of Tour</p>
+                            </div>
+
+                            <div class="arrow">
+                                <a href="javascript:void(0)" data-id="venue-pakg-area0" class="btn-arrow">
+                                    <img src="images/icons/arrow-line-right.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-3">
+                    <div class="venue">
+                        <div class="bg-img">
+                            <img src="images/destination/beach.png" />
+                            
+                        </div>
+                        <div class="discription">
+                            <div class="name">
+                                <h3>Miyami</h3>
+                                <p> 4 Types Of Tour</p>
+                            </div>
+
+                            <div class="arrow">
+                                <a href="javascript:void(0)" data-id="venue-pakg-area1" class="btn-arrow">
+                                    <img src="images/icons/arrow-line-right.png" />
+                                   
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-3">
+                    <div class="venue">
+                        <div class="bg-img">
+                            <img src="images/destination/beach.png" />
+                        </div>
+                        <div class="discription">
+                            <div class="name">
+                                <h3>Miyami</h3>
+                                <p> 4 Types Of Tour</p>
+                            </div>
+
+                            <div class="arrow">
+                                <a href="javascript:void(0)" data-id="venue-pakg-area2" class="btn-arrow">
+                                    <img src="images/icons/arrow-line-right.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-3">
+                    <div class="venue">
+                        <div class="bg-img">
+                            <img src="images/destination/beach.png" />
+                            <div class="name">
+                                Miyami
+                            </div>
+                        </div>
+                        <div class="discription">
+                            <div class="name">
+                                <h3>Miyami</h3>
+                                <p> 4 Types Of Tour</p>
+                            </div>
+
+                            <div class="arrow">
+                                <a href="javascript:void(0)" data-id="venue-pakg-area3" class="btn-arrow">
+                                    <img src="images/icons/arrow-line-right.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="destination-packeges-description" id="venue-pakg-area0" style="display:none">
+            <div class="our-destination venue-package">
+                <h2>
+                    Our Destination
+                </h2>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt
+                </p>
+                <div class="destinations">
+
+                    <div class="owl-carousel" id="venue-car-area0">
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/blue-sky.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/paris.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/sea-roks.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-packeges-description" id="venue-pakg-area1" style="display:none">
+            <div class="our-destination venue-package">
+                <h2>
+                    Our Destination
+                </h2>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt
+                </p>
+                <div class="destinations">
+
+                    <div class="owl-carousel" id="venue-car-area1">
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/blue-sky.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/paris.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/sea-roks.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-packeges-description" id="venue-pakg-area2" style="display:none">
+            <div class="our-destination venue-package">
+                <h2>
+                    Our Destination
+                </h2>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt
+                </p>
+                <div class="destinations">
+
+                    <div class="owl-carousel" id="venue-car-area2">
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/blue-sky.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/paris.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/sea-roks.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination-packeges-description" id="venue-pakg-area3" style="display:none">
+            <div class="our-destination venue-package">
+                <h2>
+                    Our Destination
+                </h2>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt
+                </p>
+                <div class="destinations">
+
+                    <div class="owl-carousel" id="venue-car-area3">
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/blue-sky.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/paris.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/sea-roks.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card-flip">
+                                <div class="for-flip">
+                                    <div class="front">
+                                        <img class="carosal-background" src="images/destination/beach.png" alt="" />
+                                        <div class="name">
+                                            Miyami
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <a onclick="return likeBtn();" class="like-btn outline"></a>
+                                        <h2>
+                                            Miyami
+                                        </h2>
+                                        <p>lorem ipsum odlar</p>
+                                        <div class="location-details">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit. Adipisci unde
+                                            optio
+                                            accusantium molestias ut, vel
+                                            veritatis
+                                            doloremque pariatur sed impedit,
+                                            quo
+                                            rerum
+                                            modi molestiae nemo ipsum velit.
+                                        </div>
+                                        <a href="#" class="readmore">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--==========================
+            Contact US Form
+    ========================= -->
+    <section class="contact-section">
+
+        <div class="contact-block">
+            <h2>Get Our offers</h2>
+            <p class="description">Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia</p>
+            <div class="submit-input">
+                <input type="email" class="custom-input" placeholder="E-Mail" />
+                <button class="btn submit-contact">SEND</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--==========================
+            Footer
+    ========================= -->
+    <footer class="footer">
+        <div class="row">
+            <div class="left-section col-xl-10">
+                <div class="footer-field">
+                    <h4 class="field-head">CONTACT US</h4>
+                    <ul class="field-options">
+                        <li class="field-option"><a href="">+44 132 456 789 </a></li>
+                        <li class="field-option"><a href="">TravelZone@mail.com</a></li>
+                        <li class="field-option"><a href="">Find a Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-field">
+                    <h4 class="field-head">SERVICES</h4>
+                    <ul class="field-options">
+                        <li class="field-option"><a href="">Contact Us</a></li>
+                        <li class="field-option"><a href="">Ordering & Payment</a></li>
+                        <li class="field-option"><a href="">Shipping</a></li>
+                        <li class="field-option"><a href="">Returns</a></li>
+                        <li class="field-option"><a href="">FAQ</a></li>
+                        <li class="field-option"><a href="">Sizing Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-field">
+                    <h4 class="field-head">INFORMATION</h4>
+                    <ul class="field-options">
+                        <li class="field-option"><a href="">TravelZone main</a></li>
+                        <li class="field-option"><a href="">Work With US</a></li>
+                        <li class="field-option"><a href="">Privacy Policy</a></li>
+                        <li class="field-option"><a href="">Terms & Conditions</a></li>
+                        <li class="field-option"><a href="">Press Enquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section col-xl-2">
+                <div class="social-icons">
+                    <a class="social-icon" href=""><img src="images/icons/instagram.png" /></a>
+                    <a class="social-icon" href=""><img src="images/icons/twitter.png" /></a>
+                    <a class="social-icon" href=""><img src="images/icons/fb.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+                ©TravelZone 2019
+        </div>
+    </footer>
+
+
+
+    <!-- ===================== BOOTSTRAP ===================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- ===================== Owl carosal ===================================== -->
+    <script src="js/carousals/owl.carousel.js"> </script>
+    <script src="js/carousals/cutomise-carosal.js"> </script>
+
+    <!-- ===================== particle.js ===================================== -->
+   <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"> </script>
+    <script src="js/particale.js"> </script> -->
+
+    <!-- ===================== Flex-Slider ===================================== -->
+    <script type="text/javascript" src="https://www.tourmyindia.com/jsh1/jquery.flexslider.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- ===================== custome JS ===================================== -->
+    <script src="js/custome.js"></script>
+
+</body>
+
+</html>

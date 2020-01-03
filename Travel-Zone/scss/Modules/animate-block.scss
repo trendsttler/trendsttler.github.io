@@ -1,0 +1,29 @@
+$theme-color:#F68948;
+
+
+.border-bottom-anim {
+    transition: .5s;
+    position: relative;
+    left: 0;
+
+    &::after {
+        content: "";
+        width: 0%;
+        position: absolute;
+        height: 2px;
+        border-bottom: 1px solid $theme-color;
+        transition: .5s;
+        top: 100%;
+        left: 0;
+
+    }
+
+    &:hover {
+        color: $theme-color;
+        transition: .5s;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}

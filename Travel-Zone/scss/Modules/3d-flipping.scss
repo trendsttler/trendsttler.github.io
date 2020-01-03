@@ -1,0 +1,126 @@
+.card-flip {
+    .for-flip {
+        position: relative;
+        background: white;
+        overflow: hidden;
+        transition: 0.5s;
+        transform-style: preserve-3d;
+        min-height: fit-content;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 6px 22px #f28245;
+    }
+
+    &:hover {
+        .for-flip {
+            transform: rotateY(180deg);
+
+            .front {
+                opacity: 0;
+            }
+
+            .back {
+                opacity: 1;
+            }
+        }
+    }
+
+    .front,
+    .back {
+        backface-visibility: hidden;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition-delay: 0.15s;
+        transition: 0;
+    }
+
+    .front {
+        position: relative;
+        transform: rotateY(0deg);
+
+        .name {
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            min-height: 50px;
+            padding: 35px 0;
+            color: #fff;
+            font-weight: 600;
+            font-size: 24px;
+            background-image: linear-gradient(#0000 0%, #0004 40%);
+            text-align: center;
+        }
+    }
+
+    .back {
+        transform: rotateY(180deg);
+        opacity: 0;
+        padding: 30px 20px;
+        backface-visibility: visible;
+        background-image: $theme-gradient-tb;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        h2 {
+            font-size: 40px;
+            line-height: 40px;
+            color: #fff;
+            margin-bottom: 0;
+            font-family: $font-lato;
+            margin-top: 33px;
+            margin-bottom: 13px;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            opacity: 0.9;
+            font-family: $font-lato;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 44px;
+        }
+
+        .location-details {
+            max-width: 255px;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            opacity: 0.74;
+        }
+
+        .readmore {
+            font-size: 18px;
+            position: absolute;
+            bottom: 30px;
+            color: #F9EA9A;
+            left: 50%;
+            transform: translateX(-50%);
+            text-decoration: underline;
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .front .name {
+            padding: 20px 0;
+        }
+    }
+
+    @media screen and (max-width: 568px) {
+        .for-flip {
+            box-shadow: 0 4px 15px #f2824596;
+        }
+
+    }
+}

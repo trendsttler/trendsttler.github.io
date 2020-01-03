@@ -1,0 +1,12 @@
+$theme-gradient-tb: linear-gradient(180deg, #F68948 0%,#C2201C 74%, #BF1A1A 100%);
+$orange: #F68948;
+$orange-dark: #BE1C05;
+
+.bg-gradient-blue {
+    background-image: -webkit-linear-gradient(45deg, #b4b0db, #b7d8e2);
+    background-image: -moz-linear-gradient(45deg, #b4b0db, #b7d8e2);
+    background-image: -ms-linear-gradient(45deg, #b4b0db, #b7d8e2);
+    background-image: -o-linear-gradient(45deg, #b4b0db, #b7d8e2);
+    background-image: linear-gradient(45deg, #b4b0db, #b7d8e2);
+    color: #fff;
+}

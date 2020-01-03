@@ -1,0 +1,17 @@
+@import "base/fonts";
+@import "base/normalise";
+@import "base/colors";
+@import "base/layout";
+
+
+@import "modules/top-carosal.scss";
+@import "modules/navbar.scss";
+@import "modules/our-destination.scss";
+@import "modules/carosal.scss";
+@import "modules/our-venue.scss";
+@import "modules/venue-pkg.scss";
+
+@import "modules/3d-flipping.scss";
+@import "modules/contact-section.scss";
+@import "modules/footer.scss";
+@import "modules/animate-block.scss";
