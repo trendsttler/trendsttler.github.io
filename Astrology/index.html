@@ -26,8 +26,10 @@
             <a class="navbar-brand" href="#">Vaidik<span>Astro</span></a>
 
             <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+                aria-expanded="false">
+                <span class=" fa fa-bars"></span>
+                <span class=" fa fa-times"></span>
             </button>
 
             <!-- Navbar links -->
@@ -63,7 +65,7 @@
     <section class="about-sec">
         <h2 class="sec-head">Who We are</h2>
         <div class="container">
-            <div class="row">
+            <div class="row flex-wrap-reverse">
                 <div class="col-sm-6">
                     <img class="about-img" src="./images/about-img.png">
                 </div>
@@ -98,9 +100,9 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services px-0 px-sm-2">
         <h2 class="sec-head">Our Specialities</h2>
-        <div class="container">
+        <div class="container p-0">
             <div class="owl-carousel service-carousel">
 
                 <div class="item mb-4">
@@ -182,6 +184,82 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+
+        <h1 class="section-header">CONTACT</h1>
+
+        <div class="contact-wrapper">
+
+            <!---------------- 
+      
+            CONTACT PAGE LEFT 
+          
+            ----------------->
+
+            <form class="form-horizontal" role="form" method="post" action="contact.php">
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+                </div>
+
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+
+               <div class="px-2"> <button class="btn btn-primary send-button " id="submit" type="submit" value="SEND">
+                    <i class="fa fa-paper-plane"></i> Get Your Answer
+                </button>
+            </div>
+            </form>
+
+            <!---------------- 
+      
+            CONTACT PAGE RIGHT 
+          
+            ----------------->
+
+            <div class="direct-contact-container">
+
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Khalsa
+                                Nagar,<br>
+                                Sri Ganganagar, 335001</span></i></li>
+
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                                    href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                                    href="mailto:#" title="Send me an email">vaidikasto@gmail.com</a></span></i></li>
+
+                </ul>
+
+                <hr>
+                <ul class="social-media-list">
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <hr>
+
+                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED
+                    <br>
+                    Vadik Astro
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -199,7 +277,7 @@
             nav: false,
             responsive: {
                 0: {
-                    items: 1.3,
+                    items: 1.2,
                     margin: 20,
                 },
                 600: {

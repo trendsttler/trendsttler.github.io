@@ -50,3 +50,20 @@ nav.navbar.navbar-theme {
     }
   }
 }
+
+.navbar-toggler[aria-expanded="false"]{
+ .fa-bars{
+   display: block;
+ } 
+ .fa-times{
+   display: none;
+ }
+}
+.navbar-toggler[aria-expanded="true"]{
+ .fa-bars{
+   display: none;
+ } 
+ .fa-times{
+   display: block;
+ }
+}
