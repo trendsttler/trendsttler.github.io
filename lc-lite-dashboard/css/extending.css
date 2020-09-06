@@ -166,6 +166,9 @@ span.select2-selection.select2-selection--single {
   color: #fff;
   font-weight: 400;
   display: inline-block !important;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 30px 0 0;
+  font-size: 16px !important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
