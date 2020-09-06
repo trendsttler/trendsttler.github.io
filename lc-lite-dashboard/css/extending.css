@@ -171,6 +171,36 @@ span.select2-selection.select2-selection--single {
   font-size: 16px !important;
 }
 
+.select2-search--dropdown {
+  display: block;
+  padding: 10px;
+}
+
+.select2-results__option {
+  padding: 13px 10px;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #ff7d73;
+  color: white;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+}
+
+span.select2-dropdown.select2-dropdown--below {
+  border-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  border: 0;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   background-image: url(../img/icons/arrow-dropdown.png);
   background-repeat: no-repeat;
