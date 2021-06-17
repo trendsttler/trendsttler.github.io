@@ -1,0 +1,30 @@
+.our-services {
+    text-align: center;
+    position: relative;
+    padding-top: get-vw(100px);
+    padding-bottom: get-vw(50px);
+    .sec-details {
+        margin-bottom: get-vw(100px);
+    }
+
+    .services-cards {
+        @include flex-center;
+        .service-card {
+            padding: get-vw(20px);
+            width: get-vw(300px);
+            background-image: linear-gradient(135deg, #ff148e, #ef006f) !important;
+            margin-right: get-vw(55px);
+            border-radius: get-vw(4px);
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .service-title {
+                color: #fff;
+                padding-top: get-vw(20px);
+                font-size: get-vw(22px);
+                font-weight: 700;
+            }
+        }
+    }
+}

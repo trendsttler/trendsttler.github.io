@@ -1,0 +1,20 @@
+.theme-btn {
+    background-image: linear-gradient(105deg, #ff148e, #ef006f) !important;
+    color: #fff !important;
+    box-shadow: 0 get-vw(3px) get-vw(10px) #ff148e4d;
+    border-radius: get-vw(50px);
+    padding: get-vw(12px) get-vw(24px);
+    font-weight: bold;
+    border: get-vw(2px) solid #ef006f !important;
+    &.btn-outline {
+        background: transparent !important;
+        color: #ef006f !important;
+        border: get-vw(2px) solid #ef006f !important;
+        box-shadow: 0 0.15625vw 0.52083vw #0000001a;
+    }
+}
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+}
+

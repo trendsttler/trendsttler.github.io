@@ -1,0 +1,20 @@
+@function get-vw($target) {
+  $vw-context: (1920 * 0.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+  
+@import "./base/layout";
+@import "./base/mixin";
+
+@import "./component/header";
+@import "./component/landing-section";
+@import "./component/about-section";
+@import "./component/our-services";
+@import "./component/how-it-works";
+@import "./component/our-customers";
+@import "./component/footer";
+
+@import "./module/buttons";
+
+

@@ -1,0 +1,87 @@
+section.about-us-section {
+    text-align: center;
+    color: #000;
+    padding-top: get-vw(100px);
+    padding-bottom: get-vw(50px);
+    .about-heading {
+        font-size: get-vw(50px);
+        line-height: get-vw(69px);
+        font-weight: 700;
+        max-width: get-vw(980px);
+        margin: 0 auto get-vw(30px);
+    }
+    .delivery-offer {
+        color: #6665dd;
+        font-size: get-vw(20px);
+        line-height: get-vw(27px);
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: get-vw(30px);
+    }
+    .about-details {
+        font-size: get-vw(20px);
+        line-height: get-vw(30px);
+        width: get-vw(702px);
+        margin: 0 auto;
+        font-weight: 400;
+        margin-bottom: get-vw(40px);
+    }
+    .about-us-quotes-block {
+        width: get-vw(1088px);
+        margin: 0 auto;
+        background: #ff148e;
+        padding: get-vw(20px);
+        border-radius: get-vw(10px);
+        box-shadow: 0 get-vw(3px) get-vw(6px) #0000001a;
+        color: #fff;
+        .about-us-quotes-text {
+            margin-bottom: get-vw(12px);
+        }
+        .writer-name {
+            font-size: get-vw(16px);
+        }
+    }
+
+    ul.about-listings {
+        display: flex;
+        justify-content: space-between;
+        margin-top: get-vw(100px);
+        .about-listing {
+            border: get-vw(1.5px) solid #ff148e;
+            border-radius: get-vw(10px);
+            background: #fff6c7;
+            margin: 0 auto;
+            width: get-vw(300px);
+            height: get-vw(283px);
+            padding: get-vw(45px) get-vw(26px);
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            img {
+                height: get-vw(60px);
+                width: auto;
+                margin-bottom: get-vw(19px);
+                display: inline-block;
+            }
+            .listing-details {
+                font-size: get-vw(16px);
+                font-weight: bold;
+                color: #000;
+                strong {
+                    font-weight: 800;
+                    white-space: nowrap;
+                }
+            }
+            .listing-title {
+                font-size: get-vw(20px);
+                font-weight: bold;
+                line-height: get-vw(27px);
+                margin-bottom: get-vw(12px);
+                color: #FF148E;
+            }
+        }
+    }
+}

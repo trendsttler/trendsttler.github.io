@@ -1,0 +1,56 @@
+header.header {
+    padding: get-vw(30px) 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-logo-area {
+        width: get-vw(88px);
+    }
+    .top-navigation ul {
+        @include flex;
+        li a {
+            display: inline-block;
+            font-size: get-vw(16px);
+            line-height: get-vw(22px);
+            color: #000000;
+            text-transform: uppercase;
+            padding: 0 get-vw(50px) 0 0;
+            font-weight: 900;
+            position: relative;
+            transition: 0.5s;
+            &:after{
+                content: "";
+                width:0;
+                border-radius: get-vw(50px);
+                height: get-vw(2px);
+                background: #000;
+                position: absolute;
+                top:calc(100% + #{get-vw(5px)});
+                left: 0;
+                transition: 0.5s;
+            }
+            &:hover{
+                &:after{
+                    width: calc(100% - #{get-vw(50px)});
+                    border-radius: 50px;
+                }
+            }
+            &.login-btn.btn{
+                &:hover{
+                    &:after{
+                        width: 0;
+                        border-radius: get-vw(50px);
+                    }
+                }
+            }
+        }
+        a.login-btn.btn {
+            padding: get-vw(9px) get-vw(22px);
+            display: inline-block;
+            font-weight: 600;
+        }
+    }
+}

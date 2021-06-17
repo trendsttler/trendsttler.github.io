@@ -1,0 +1,102 @@
+ul.follow-options img {
+    width: get-vw(30px);
+}
+
+section.landing-section {
+    min-height: get-vw(840px);
+    position: relative;
+    .bg-image-left-corner {
+        left: 0;
+        top: get-vw(-125px);
+        position: absolute;
+        width: get-vw(329px);
+        z-index: -1;
+    }
+    .theme-container {
+        @include flex;
+        .landing-content {
+            width: get-vw(585px);
+            margin-top: get-vw(204px);
+
+            .landing-head {
+                font-size: get-vw(60px);
+                line-height: get-vw(70px);
+                font-weight: bold;
+                color: #ff148e;
+                span.text-dark {
+                    // display: block;
+                    color: #000000 !important;
+                }
+            }
+        }
+        .landing-banner {
+            position: absolute;
+            right: 0;
+            width: get-vw(1093px);
+            top: get-vw(-124px);
+            z-index: -1;
+        }
+        button.btn.theme-btn {
+            padding: get-vw(16px) get-vw(40px);
+            font-size: get-vw(16px);
+        }
+        .landing-options {
+            margin-top: get-vw(50px);
+            button {
+                margin-right: get-vw(30px);
+                min-width: get-vw(207px);
+                line-height: get-vw(16px);
+            }
+        }
+    }
+    a.scroll-next-button {
+        border: get-vw(3px) solid #f10373;
+        position: absolute;
+        top: get-vw(800px);
+        left: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: get-vw(38px);
+        height: get-vw(60px);
+        border-radius: get-vw(50px);
+        span {
+            display: inline-block;
+            width: get-vw(10px);
+            height: get-vw(10px);
+            border-radius: get-vw(500px);
+            background: #f20374;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 0;
+            animation: wind 1s infinite;
+            animation-timing-function: cubic-bezier(0.18, 0.78, 0.15, 0.93);
+        }
+    }
+}
+.follow-us-block {
+    margin-top: get-vw(50px);
+    .follow-title {
+        margin-bottom: get-vw(14px);
+        font-size: get-vw(16px);
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    ul.follow-options {
+        @include flex;
+        li {
+            margin-right: get-vw(20px);
+        }
+    }
+}
+@keyframes wind {
+    0% {
+        bottom: 100%;
+        top: 0;
+    }
+    50% {
+        bottom: 0;
+        top: 54%;
+    }
+}
