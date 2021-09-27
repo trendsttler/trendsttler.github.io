@@ -1,0 +1,117 @@
+.landing-poster {
+    padding: 0 15px;
+    color: #fff;
+
+    .poster {
+        position: relative;
+        overflow: hidden;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .poster-bg img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            max-width: initial;
+            min-height: 100%;
+        }
+
+        h3 {
+            font-size: 22px;
+            position: relative;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+.dis-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 -15px;
+    flex-grow: 1;
+    z-index: 10;
+    position: relative;
+    
+    &::before {
+        opacity: 0;
+        transition: .5s ease-in;
+    }
+
+    h3 {
+        top: 35px;
+        transition: .5s ease-in-out;
+        z-index: 10;
+    }
+
+    .dis-loan {
+        opacity: 0;
+        transition: .5s ease-in-out;
+    }
+
+    .dis-loan {
+        color: #fff;
+        font-size: 14px;
+        position: relative;
+        text-align: center;
+        z-index: 10;
+
+        span {
+            display: inline-block;
+            padding: 5px 20px;
+            border: 1px solid;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+    }
+
+    .dis-loan::before {
+        content: "";
+        border-top: 1px solid #fff;
+        position: relative;
+        width: 00%;
+        height: 1px;
+        display: block;
+        margin: 10px auto;
+        margin-top: 20px;
+        transition: .5s ease-in-out;
+        transition-delay: 1s;
+    }
+
+
+}
+
+.dis-section:hover {
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #33333375;
+        z-index: 1;
+        opacity: 1;
+        transition: .5s ease-in-out;
+    }
+    h3 {
+        top: 0;
+    }
+
+    .dis-loan {
+        opacity: 1;
+        transition: .5s ease-in-out;
+    }
+
+    .dis-loan::before {
+        width: 50%;
+        transition: .5s ease-in-out;
+        transition-delay: .3s;
+    }
+}

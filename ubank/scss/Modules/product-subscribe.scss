@@ -1,0 +1,87 @@
+
+.product-subscribe {
+    background: $theme-dark;
+    width: 100%;
+    padding: 30px 0 50px;
+    min-height: 230px;
+}
+.product-subscribe .subs_error {
+    color: red;
+    float: left;
+    text-align: center;
+    width: 100%;
+    line-height: 32px;
+}
+.subscribe-form .right {
+    text-align: right;
+}
+.subscribe-form .form-group .form-control {
+    border-radius: 3px;
+    border: 0 solid;
+    height: 40px;
+    line-height: 40px;
+    color: $theme-dark;
+    font-size: 14px;
+    font-weight: 500;
+    width: 50%;
+}
+.subscribe-form .form-group .form-control {
+    border-radius: 3px;
+    border: 0 solid;
+    height: 40px;
+    line-height: 40px;
+    color: $theme-dark;
+    font-size: 14px;
+    font-weight: 500;
+    width: 50%;
+}
+.subscribe-form .subscribe-btn {
+    position: relative;
+    left: -6px;
+    border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border: 0 solid #000;
+    background: url(http://www.paisafatafat.com/cdn/site/images/subscribe-icon.png) center no-repeat #e89b15;
+    height: 40px;
+    width: 80px;
+}
+.product-subscribe h3 {
+    padding-bottom: 25px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    width: 100%;
+}
+.product-subscribe h2 {
+    padding: 57px 0;
+    font-weight: 100;
+    color: #FFC600;
+    margin: 0;
+}
+.hidden_dev {
+    display: none;
+}
+.subscribe-form .right {
+    text-align: right;
+}
+
+
+
+@media screen and (max-width:568px){
+    .product-subscribe h3 {
+        font-size: 20px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .product {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        margin-top: 50px;
+    }
+    .product .product-icon img {
+        width: 25%;
+    }
+}

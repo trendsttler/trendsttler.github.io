@@ -1,0 +1,36 @@
+.our-partners {
+    width: 100%;
+    padding: 90px 0;
+    background: $theme-light;
+}
+.our-partners h5 {
+    color: #ADB0BA;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.our-partners h5 {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+.our-partners h2 {
+    font-weight: 400;
+    color: $section-head-g;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:568px){
+    .client-logo .img-responsive.img-centered {
+        width: 70%;
+        margin: 10px auto;
+    }
+}

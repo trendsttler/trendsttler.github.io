@@ -1,0 +1,187 @@
+.footer {
+    background: $dark-single-bg;
+    padding: 50px 0;
+    margin-top: 00px;
+}
+
+.footer .footer-column {
+    width: 100%;
+    display: inline-block;
+}
+
+.footer .footer-column h5 {
+    color: $text-head;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer .footer-column h3 {
+    margin: 0 0 10px;
+    line-height: 40px;
+    color: #F2F2F2;
+    font-size: 15px;
+    padding: 0;
+    font-weight: 700;
+}
+
+.footer .footer-column .footer-list li a {
+    color: $head-light;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    line-height: 26px;
+    font-size: 13px;
+}
+
+.transition {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.footer .footer-column .button_group {
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-column .social_group {
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-column .button_group li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.footer .footer-column .button_group li .btnn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: $head-light;
+    border: 1px solid $head-light;
+    border-radius: .3em;
+    transition: border-color .3s ease, color .3s ease;
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+.footer .footer-column .social_group li {
+    list-style-type: none;
+}
+
+.footer .footer-column .social_group li .btnn {
+    text-align: center;
+    border: 1px solid $head-light;
+    border-radius: .3em;
+    transition: border-color .3s ease, color .3s ease;
+    height: 46px;
+    text-decoration: none;
+    min-width: 50px !important;
+    margin-right: 20px;
+}
+
+.facebook {
+    background: url(http://www.paisafatafat.com/cdn/site/images/paisfatafat-sprite-icons.png) -97px 8px no-repeat;
+    text-decoration: none;
+}
+
+.gmail {
+    background: url(http://www.paisafatafat.com/cdn/site/images/paisfatafat-sprite-icons.png) -157px 8px no-repeat;
+    text-decoration: none;
+}
+
+.twitter {
+    background: url(http://www.paisafatafat.com/cdn/site/images/paisfatafat-sprite-icons.png) -215px 8px no-repeat;
+    text-decoration: none;
+}
+
+.linkedin {
+    background: url(http://www.paisafatafat.com/cdn/site/images/paisfatafat-sprite-icons.png) -273px 8px no-repeat;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1200px) {
+    .footer .footer-column .button_group li .btnn {
+        font-size: 7px;
+        padding: 7px 13px;
+        text-align: left;
+
+    }
+
+    .footer .footer-column .social_group li .btnn {
+        margin-right: -5px;
+        transform: scale(.7);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .subscribe-form .subscribe-btn {
+        width: 40px;
+    }
+
+    .footer .footer-column .button_group li .btnn {
+        font-size: 7px;
+        padding: 7px 13px;
+        text-align: left;
+    }
+
+    .footer .footer-column .social_group li .btnn {
+        margin-right: -5px;
+        transform: scale(0.7);
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .subscribe-form .form-group select.form-control {
+        margin: 5px auto;
+    }
+
+    .email-group.form-group {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .footer .footer-column .button_group li .btnn {
+        font-size: 12px;
+        display: block;
+    }
+
+    .footer .footer-column .social_group li .btnn {
+        margin-right: 10px;
+        transform: scale(1);
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 567px) {
+
+.margin-btm20 {
+    padding-bottom: 40px;
+}
+.margin-btm20::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1px;
+    border-bottom: 1px solid #ffffff96;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.margin-btm20:last-child::after {
+    display: none;
+}
+}

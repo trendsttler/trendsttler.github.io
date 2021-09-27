@@ -1,0 +1,45 @@
+.custom-nav {
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+
+    .navbar-brand img {
+        max-height: 40px;
+    }
+
+}
+
+.pos-absolute.custom-nav {
+    top: 0;
+    left: 0;
+}
+
+.nav-drop {
+    background-color: transparent;
+    color: #fff;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+.scrolled-Header {
+    background: #000000b3;
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+@media screen and (max-width:992px) {
+    .nav-drop {
+        padding-left: 0;
+    }
+
+    .custom-nav {
+        background: #333;
+    }
+
+    .navbar-nav {
+        margin-top: 15px;
+    }
+}

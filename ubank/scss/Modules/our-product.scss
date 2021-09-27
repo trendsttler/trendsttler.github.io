@@ -1,0 +1,43 @@
+.our-product {
+    background: $theme-dark;
+    width: 100%;
+    padding: 90px 0 40px;
+}
+.our-product h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.product {
+    text-decoration: none!important;
+    margin: 20px 0;
+    min-height: 230px;
+}
+.product .product-icon {
+    text-align: center;
+}
+.product .product-icon img {
+    width: 20%;
+}
+.product h5 {
+    color: #F2F2F2;
+    font-weight: 500;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product p {
+    color: $text-light;
+    font-size: 15px;
+    line-height: 20px;
+}
+.product, .product .product-icon {
+    width: 100%;
+    display: inline-block;
+}
+.comingsoon {
+    background: $coming-soon;
+}
