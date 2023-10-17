@@ -1,0 +1,34 @@
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #c3e897;
+    outline: 0;
+    box-shadow: 0 0 0 2px #7ed0156e;
+}
+
+.form-select:focus {
+    border-color: #c3e897;
+    outline: 0;
+    box-shadow: 0 0 0 2px #7ed0156e;
+}
+
+.pagination {
+    --bs-pagination-color: #82d616;
+    --bs-pagination-active-bg: #82d616;
+    --bs-pagination-active-border-color: #82d616;
+}
+
+div.dataTables_scrollBody {
+    border: 0 !important;
+}
+
+.paginate_button .page-link.active,
+.paginate_button .active > .page-link,
+.paginate_button .page-item.active .page-link,
+.paginate_button .page-item.active span {
+    color: #ffffff;
+}
+
+.page-item.active .page-link {
+    color: #ffffff;
+}
