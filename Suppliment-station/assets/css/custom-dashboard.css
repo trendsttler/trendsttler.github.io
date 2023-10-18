@@ -1,34 +1,46 @@
 .form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #c3e897;
-    outline: 0;
-    box-shadow: 0 0 0 2px #7ed0156e;
+  color: #495057;
+  background-color: #fff;
+  border-color: #c3e897;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(126, 208, 21, 0.431372549);
 }
 
 .form-select:focus {
-    border-color: #c3e897;
-    outline: 0;
-    box-shadow: 0 0 0 2px #7ed0156e;
+  border-color: #c3e897;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(126, 208, 21, 0.431372549);
+}
+
+* {
+  --bs-pagination-focus-box-shadow: #82d616;
 }
 
 .pagination {
-    --bs-pagination-color: #82d616;
-    --bs-pagination-active-bg: #82d616;
-    --bs-pagination-active-border-color: #82d616;
+  --bs-pagination-color: #82d616;
+  --bs-pagination-active-bg: #82d616;
+  --bs-pagination-active-border-color: #82d616;
 }
 
 div.dataTables_scrollBody {
-    border: 0 !important;
+  border: 0 !important;
 }
 
 .paginate_button .page-link.active,
 .paginate_button .active > .page-link,
 .paginate_button .page-item.active .page-link,
 .paginate_button .page-item.active span {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .page-item.active .page-link {
-    color: #ffffff;
+  color: #ffffff;
 }
+
+div.dataTables_wrapper div.dataTables_length select {
+  background-position: right 0.15rem center;
+  font-size: 14px;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+  width: 300px;
+}/*# sourceMappingURL=custom-dashboard.css.map */

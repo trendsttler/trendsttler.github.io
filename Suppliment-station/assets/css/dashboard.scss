@@ -4,16 +4,16 @@
 @import "../scss/dashboard/bootstrap/functions";
 
 // Custom Variables
-@import "dashboard/custom/variables";
+@import "../scss/dashboard/custom/variables";
 
 // Theme Variables
-@import "dashboard/variables";
+@import "../scss/dashboard/variables";
 
 // Bootstrap Core
-@import "dashboard/bootstrap/bootstrap";
+@import "../scss/dashboard/bootstrap/bootstrap";
 
 // Theme Core
-@import "dashboard/theme";
+@import "../scss/dashboard/theme";
 
 // Custom Variables
-@import "dashboard/custom/styles";
+@import "../scss/dashboard/custom/styles";

@@ -1,24 +1,26 @@
 .form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #c3e897;
-    outline: 0;
-    box-shadow: 0 0 0 2px #7ed0156e;
+  color: #495057;
+  background-color: #fff;
+  border-color: #c3e897;
+  outline: 0;
+  box-shadow: 0 0 0 2px #7ed0156e;
 }
 
 .form-select:focus {
-    border-color: #c3e897;
-    outline: 0;
-    box-shadow: 0 0 0 2px #7ed0156e;
+  border-color: #c3e897;
+  outline: 0;
+  box-shadow: 0 0 0 2px #7ed0156e;
 }
-
+* {
+  --bs-pagination-focus-box-shadow: #82d616;
+}
 .pagination {
   --bs-pagination-color: #82d616;
   --bs-pagination-active-bg: #82d616;
   --bs-pagination-active-border-color: #82d616;
 }
 
-div.dataTables_scrollBody{
+div.dataTables_scrollBody {
   border: 0 !important;
 }
 
@@ -33,4 +35,14 @@ div.dataTables_scrollBody{
 
 .page-item.active .page-link {
   color: #ffffff;
+}
+
+div.dataTables_wrapper {
+  div.dataTables_length select {
+    background-position: right 0.15rem center;
+    font-size: 14px;
+  }
+  div.dataTables_filter input {
+    width: 300px;
+  }
 }
