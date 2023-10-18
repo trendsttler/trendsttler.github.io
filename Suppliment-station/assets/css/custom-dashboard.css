@@ -43,4 +43,5 @@ div.dataTables_wrapper div.dataTables_length select {
 }
 div.dataTables_wrapper div.dataTables_filter input {
   width: 300px;
+  max-width: 50vw;
 }/*# sourceMappingURL=custom-dashboard.css.map */
