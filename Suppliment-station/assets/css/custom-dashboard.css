@@ -44,4 +44,10 @@ div.dataTables_wrapper div.dataTables_length select {
 div.dataTables_wrapper div.dataTables_filter input {
   width: 300px;
   max-width: 50vw;
+}
+div.dataTables_wrapper table.dataTable thead > tr > th,
+div.dataTables_wrapper table.dataTable tbody > tr > td {
+  max-width: 150px !important;
+  word-wrap: break-word;
+  white-space: initial !important;
 }/*# sourceMappingURL=custom-dashboard.css.map */
