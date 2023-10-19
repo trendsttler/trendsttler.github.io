@@ -52,5 +52,11 @@ div.dataTables_wrapper {
     max-width:150px !important;
     word-wrap: break-word;
     white-space: initial !important;
+    &:first-child{
+      max-width:initial !important;
+      word-wrap: initial;
+      white-space: nowrap !important;
+
+    }
   }
 }
