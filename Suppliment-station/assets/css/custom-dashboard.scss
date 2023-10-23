@@ -241,6 +241,73 @@ div.dataTables_scrollBody {
   justify-content: center;
 }
 
+///-----------Custom accordion design-------------///
+.accordion-item,
+.accordion-item:not(:first-of-type) {
+  color: #373737;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  box-shadow: 0px 4px 8px #33333321;
+  margin-bottom: 20px;
+  &:last-of-type,
+  &:first-of-type {
+    border-radius: 10px;
+  }
+}
+
+.accordion-header {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+
+  .accordion-button{
+    font-weight: 700;
+    color: #344767;
+  }
+
+  .accordion-CTA {
+    margin: 5px;
+  }
+}
+.accordion-body {
+  padding: 0 15px;
+}
+.loginas-lists {
+  padding: 0;
+  list-style: none;
+  border-top: 1px dashed #d3d3d3;
+
+  button {
+    margin-bottom: 0;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px dashed #d3d3d3;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+    small{
+      color: #949ea7;
+      font-weight: 300;
+      width: 100%;
+      display: inline-block;
+    }
+    span{
+      font-weight: 600;
+    }
+
+    .btn{
+      white-space: nowrap;
+    }
+  }
+}
+
+///------------------------///
+
 @media screen and (max-width: 1200px) {
   .navbar.navbar-main {
     flex-wrap: nowrap;

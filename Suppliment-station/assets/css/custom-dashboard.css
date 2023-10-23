@@ -222,6 +222,68 @@ div.dataTables_scrollBody {
   justify-content: center;
 }
 
+.accordion-item,
+.accordion-item:not(:first-of-type) {
+  color: #373737;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  box-shadow: 0px 4px 8px rgba(51, 51, 51, 0.1294117647);
+  margin-bottom: 20px;
+}
+.accordion-item:last-of-type, .accordion-item:first-of-type,
+.accordion-item:not(:first-of-type):last-of-type,
+.accordion-item:not(:first-of-type):first-of-type {
+  border-radius: 10px;
+}
+
+.accordion-header {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+}
+.accordion-header .accordion-button {
+  font-weight: 700;
+  color: #344767;
+}
+.accordion-header .accordion-CTA {
+  margin: 5px;
+}
+
+.accordion-body {
+  padding: 0 15px;
+}
+
+.loginas-lists {
+  padding: 0;
+  list-style: none;
+  border-top: 1px dashed #d3d3d3;
+}
+.loginas-lists button {
+  margin-bottom: 0;
+}
+.loginas-lists .list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px dashed #d3d3d3;
+}
+.loginas-lists .list-item:last-child {
+  border-bottom: 0;
+}
+.loginas-lists .list-item small {
+  color: #949ea7;
+  font-weight: 300;
+  width: 100%;
+  display: inline-block;
+}
+.loginas-lists .list-item span {
+  font-weight: 600;
+}
+.loginas-lists .list-item .btn {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 1200px) {
   .navbar.navbar-main {
     flex-wrap: nowrap;
