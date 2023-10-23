@@ -323,5 +323,8 @@ div.dataTables_scrollBody {
 @media screen and (max-width: 992px) {
   .sidenav.fixed-start ~ .main-content {
     overflow: auto !important;
+    &.ps {
+      overflow: auto !important;
+    }
   }
 }

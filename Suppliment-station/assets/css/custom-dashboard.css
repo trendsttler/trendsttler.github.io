@@ -289,4 +289,7 @@ div.dataTables_scrollBody {
   .sidenav.fixed-start ~ .main-content {
     overflow: auto !important;
   }
+  .sidenav.fixed-start ~ .main-content.ps {
+    overflow: auto !important;
+  }
 }/*# sourceMappingURL=custom-dashboard.css.map */
