@@ -320,3 +320,8 @@ div.dataTables_scrollBody {
     margin-top: 5px;
   }
 }
+@media screen and (max-width: 992px) {
+  .sidenav.fixed-start ~ .main-content {
+    overflow: auto !important;
+  }
+}
