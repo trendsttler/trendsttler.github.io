@@ -193,10 +193,6 @@ div.dataTables_scrollBody {
   border-bottom-right-radius: 0;
 }
 
-.form-check:not(.form-switch) .form-check-input[type=radio]:checked {
-  padding: 0.36rem 0.33rem;
-}
-
 .navbar-vertical .navbar-nav .nav-item .nav-link {
   border-radius: 10px;
 }
@@ -257,6 +253,9 @@ div.dataTables_scrollBody {
   }
   .numbers p {
     font-size: 12px !important;
+  }
+  .form-check:not(.form-switch) .form-check-input[type=radio]:checked {
+    padding: 0.36rem 0.33rem;
   }
   .navbar-vertical .navbar-nav .nav-link {
     padding-left: 0.5rem;

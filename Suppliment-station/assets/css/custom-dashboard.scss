@@ -204,11 +204,6 @@ div.dataTables_scrollBody {
   border-bottom-right-radius: 0;
 }
 
-// custom radio
-.form-check:not(.form-switch) .form-check-input[type=radio]:checked {
-  padding: 0.36rem 0.33rem;
-}
-
 // ------ Navbar --------- //
 
 .navbar-vertical .navbar-nav {
@@ -281,6 +276,11 @@ div.dataTables_scrollBody {
     p {
       font-size: 12px !important;
     }
+  }
+
+  // custom radio
+  .form-check:not(.form-switch) .form-check-input[type="radio"]:checked {
+    padding: 0.36rem 0.33rem;
   }
 
   .navbar-vertical {
