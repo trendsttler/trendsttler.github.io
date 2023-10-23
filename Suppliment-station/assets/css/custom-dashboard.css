@@ -193,6 +193,10 @@ div.dataTables_scrollBody {
   border-bottom-right-radius: 0;
 }
 
+.form-check:not(.form-switch) .form-check-input[type=radio]:checked {
+  padding: 0.36rem 0.33rem;
+}
+
 .navbar-vertical .navbar-nav .nav-item .nav-link {
   border-radius: 10px;
 }
@@ -203,6 +207,7 @@ div.dataTables_scrollBody {
 }
 .navbar-vertical .navbar-nav .nav-item .nav-link .icon i {
   color: #141727;
+  font-size: 1rem;
 }
 
 .navbar-vertical.navbar-expand-xs .navbar-collapse {
@@ -274,5 +279,10 @@ div.dataTables_scrollBody {
     display: block;
     overflow: auto;
     height: calc(100vh - 120px);
+  }
+  .daterangepicker .drp-buttons .btn {
+    margin-top: 8px;
+    font-size: 10px;
+    margin-top: 5px;
   }
 }/*# sourceMappingURL=custom-dashboard.css.map */

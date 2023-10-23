@@ -204,6 +204,11 @@ div.dataTables_scrollBody {
   border-bottom-right-radius: 0;
 }
 
+// custom radio
+.form-check:not(.form-switch) .form-check-input[type=radio]:checked {
+  padding: 0.36rem 0.33rem;
+}
+
 // ------ Navbar --------- //
 
 .navbar-vertical .navbar-nav {
@@ -219,6 +224,7 @@ div.dataTables_scrollBody {
 
       .icon i {
         color: #141727;
+        font-size: 1rem;
       }
     }
   }
@@ -233,7 +239,6 @@ div.dataTables_scrollBody {
     padding-bottom: 10px;
   }
 }
-
 
 .icon-center {
   display: inline-flex;
@@ -309,4 +314,9 @@ div.dataTables_scrollBody {
     }
   }
 
+  .daterangepicker .drp-buttons .btn {
+    margin-top: 8px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
 }
