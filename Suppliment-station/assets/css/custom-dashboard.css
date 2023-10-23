@@ -189,6 +189,14 @@ div.dataTables_scrollBody {
   border-bottom-right-radius: 0;
 }
 
+.navbar-vertical .navbar-nav .nav-item .nav-link {
+  border-radius: 10px;
+}
+.navbar-vertical .navbar-nav .nav-item .nav-link:hover {
+  background: #20243e;
+  color: white;
+  font-weight: bold;
+}
 .navbar-vertical .navbar-nav .nav-item .nav-link .icon i {
   color: #141727;
 }

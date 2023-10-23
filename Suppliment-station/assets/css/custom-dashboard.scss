@@ -202,8 +202,22 @@ div.dataTables_scrollBody {
 
 // ------ Navbar --------- //
 
-.navbar-vertical .navbar-nav .nav-item .nav-link .icon i {
-  color: #141727;
+.navbar-vertical .navbar-nav {
+  .nav-item {
+    .nav-link {
+      border-radius: 10px;
+
+      &:hover {
+        background: #20243e;
+        color: white;
+        font-weight: bold;
+      }
+      
+      .icon i {
+        color: #141727;
+      }
+    }
+  }
 }
 .navbar-vertical.navbar-expand-xs .navbar-collapse {
   display: flex;
@@ -219,6 +233,7 @@ div.dataTables_scrollBody {
     padding-bottom: 10px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .navbar.navbar-main {
     flex-wrap: nowrap;
@@ -226,7 +241,7 @@ div.dataTables_scrollBody {
       flex-wrap: nowrap;
       position: relative;
 
-      & > *{
+      & > * {
         z-index: 1;
       }
     }
