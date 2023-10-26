@@ -37,15 +37,37 @@ div.dataTables_scrollBody {
   color: #ffffff;
 }
 
+.page-item:first-child.disabled .page-link,
+.page-item:last-child.disabled .page-link {
+  background: #bbf374;
+}
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  background: #82d616;
+  color: #fff;
+}
+.page-item:first-child .page-link:hover,
+.page-item:last-child .page-link:hover {
+  background: #6ea525;
+  cursor: pointer;
+}
+
 .page-item.active .page-link {
   color: #ffffff;
 }
 
 div.dataTables_wrapper div.dataTables_length select {
-  background-position: right 0.15rem center;
+  background: white;
   font-size: 0.9rem;
-  padding-left: 3px;
-  padding-right: 20px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d2d6da;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+  webkit-appearance: auto;
+  -moz-appearance: auto;
+  -webkit-appearance: auto;
+          appearance: auto;
 }
 div.dataTables_wrapper div.dataTables_filter input {
   width: 300px;
@@ -230,6 +252,9 @@ div.dataTables_scrollBody {
   width: 100%;
   padding-bottom: 10px;
 }
+.navbar-vertical.navbar-expand-xs .navbar-collapse .ps__rail-y {
+  display: none !important;
+}
 
 .icon-center {
   display: inline-flex;
@@ -262,18 +287,19 @@ div.dataTables_scrollBody {
 }
 .accordion-header .accordion-button::after {
   flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   margin-left: auto;
+  border: 1px solid #344767;
+  border-width: 3px 3px 0 0;
+  transform: rotate(135deg);
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
 }
 .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  transform: rotate(-180deg);
+  transform: rotate(-45deg);
 }
 .accordion-header .accordion-CTA {
   margin: 5px;
@@ -314,23 +340,64 @@ div.dataTables_scrollBody {
   white-space: nowrap;
 }
 
+.navbar .nav-link {
+  font-size: 1.2rem;
+}
+
 .table-download {
   display: flex;
   align-items: center;
   position: absolute;
-  left: 160px;
-  top: 13px;
+  left: 180px;
+  top: 14px;
   z-index: 1000;
 }
 .table-download .btn-sm,
 .table-download .btn-group-sm > .btn {
   --bs-btn-padding-y: 0.65rem;
 }
+.table-download .table-icon {
+  padding: 2px 10px;
+  font-size: 26px;
+}
 
 select.form-control {
   -webkit-appearance: auto;
      -moz-appearance: auto;
           appearance: auto;
+}
+
+.table thead th {
+  padding: 0.75rem 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  border-bottom: 1px solid #e9ecef;
+  background: #ddd;
+  color: #333;
+  padding-left: 10px !important;
+}
+
+table.dataTable.table-striped > tbody > tr.odd > * {
+  box-shadow: none;
+}
+table.dataTable.table-striped > tbody > tr.even > * {
+  box-shadow: inset 0 0 0 9999px rgba(var(--dt-row-stripe), 0.05);
+}
+
+.error-massage {
+  display: none;
+}
+
+.is-invalid + .error-massage {
+  color: red;
+  background: rgba(255, 0, 0, 0.0901960784);
+  border-radius: 5px;
+  border: 1px solid #ffc4c4;
+  width: 100%;
+  padding: 3px 10px;
+  font-size: 13px;
+  margin-top: 5px;
+  display: inline-block;
 }
 
 @media screen and (max-width: 1200px) {
@@ -354,7 +421,7 @@ select.form-control {
     transform: translate(-50%, -50%);
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   body,
   html {
     font-size: 12px;
