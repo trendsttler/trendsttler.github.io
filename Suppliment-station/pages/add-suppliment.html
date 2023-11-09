@@ -427,106 +427,227 @@
 
         <div class="col-lg-12 mb-lg-0 mb-4">
           <div class="card">
-            <div class="card-header pb-0">
-              <h5 class="card-title">Add New Supplement</h5>
-              <p class="mb-0">All mandatory fields are marked with a red asterisk <span style="color: red;">*</span>
-              </p>
-            </div>
-            <div class="card-body">
-              <form>
-                <div class="row">
+            <ul class="nav nav-tabs full-width-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                  role="tab" aria-controls="home" aria-selected="true">Add New Supplement</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                  role="tab" aria-controls="profile" aria-selected="false">Add New Flavour</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Supplement No. <span style="color: red;">*</span> </label>
-                      <input type="text" class="form-control" placeholder="" disabled>
-                    </div>
+                <div class="card-header pb-0">
+                  <h5 class="card-title">Add New Supplement</h5>
+                  <p class="mb-0">All mandatory fields are marked with a red asterisk <span style="color: red;">*</span>
+                  </p>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
 
-                    <div class="form-group">
-                      <label>Manufacturer Name <span style="color: red;">*</span> </label>
-                      <input type="text" class="form-control" placeholder="Enter Manufacturer Name ">
-                    </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Supplement No. <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="" disabled>
+                        </div>
 
-                    <div class="form-group">
-                      <label>Name <span style="color: red;">*</span> </label>
-                      <input type="text" class="form-control" placeholder="Enter Name ">
-                    </div>
+                        <div class="form-group">
+                          <label>Manufacturer Name <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Manufacturer Name ">
+                        </div>
 
-
-                    <div class="form-group">
-                      <label>Powder type<span style="color: red;">*</span> </label>
-                      <select class="form-control" name="type" id="type" required="">
-                        <option value="" hidden>-Select-</option>
-                        <option value="protein">Protein</option>
-                        <option value="pre workout">Pre Workout</option>
-                        <option value="post workout">Post Workout</option>
-                        <option value="aminos">Aminos</option>
-                        <option value="energizer">Energizer</option>
-                      </select>
-                    </div>
-
-                    <div class="form-group">
-                      <label>Price in AUD <span style="color: red;">*</span> </label>
-                      <input type="text" class="form-control" placeholder="Enter Price">
-                    </div>
+                        <div class="form-group">
+                          <label>Name <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Name ">
+                        </div>
 
 
-                    <div class="form-group">
-                      <label>Cost in AUD <span style="color: red;">*</span> </label>
-                      <input type="text" class="form-control" placeholder="Enter Cost">
-                    </div>
-                  </div>
+                        <div class="form-group">
+                          <label>Powder type<span style="color: red;">*</span> </label>
+                          <select class="form-control" name="type" id="type" required="">
+                            <option value="" hidden>-Select-</option>
+                            <option value="protein">Protein</option>
+                            <option value="pre workout">Pre Workout</option>
+                            <option value="post workout">Post Workout</option>
+                            <option value="aminos">Aminos</option>
+                            <option value="energizer">Energizer</option>
+                          </select>
+                        </div>
 
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label>Description </label>
-                      <textarea class="form-control" rows="3" placeholder="Enter Description "></textarea>
-                    </div>
-
-                    <div class="form-group">
-                      <label>Flavour <span style="color: red;">*</span> </label>
-                      <select class="form-control mr-2" name="flavour" id="flavours" required="">
-                        <option value="" hidden>-Select-</option>
-                        <option value="chocolate">Chocolate</option>
-                        <option value="mango madness">Mango Madness</option>
-                        <option value="strawberry watermelon">Strawberry Watermelon</option>
-                        <option value="fruit punch">Fruit Punch</option>
-                        <option value="green apple">Green Apple</option>
-                        <option value="chocolate bliss">Chocolate Bliss</option>
-                        <option value="apple">Apple</option>
-                        <option value="turbo chocolate">Turbo Chocolate</option>
-                        <option value="blue raz">Blue Raz</option>
-                        <option value="vanilla">Vanilla</option>
-                      </select>
-                    </div>
+                        <div class="form-group">
+                          <label>Price in AUD <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Price">
+                        </div>
 
 
-                    <div class="form-group">
-                      <label>Serving Size in Grams <span style="color: red;">*</span> </label>
-                      <input type="number" class="form-control" placeholder="Enter Serving">
-                    </div>
-                    
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox">
-                        <label class="form-check-label">Is this supplement being promoted?</label>
+                        <div class="form-group">
+                          <label>Cost in AUD <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Cost">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Description </label>
+                          <textarea class="form-control" rows="3" placeholder="Enter Description "></textarea>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Flavour <span style="color: red;">*</span> </label>
+                          <select class="form-control mr-2" name="flavour" id="flavours" required="">
+                            <option value="" hidden>-Select-</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="mango madness">Mango Madness</option>
+                            <option value="strawberry watermelon">Strawberry Watermelon</option>
+                            <option value="fruit punch">Fruit Punch</option>
+                            <option value="green apple">Green Apple</option>
+                            <option value="chocolate bliss">Chocolate Bliss</option>
+                            <option value="apple">Apple</option>
+                            <option value="turbo chocolate">Turbo Chocolate</option>
+                            <option value="blue raz">Blue Raz</option>
+                            <option value="vanilla">Vanilla</option>
+                          </select>
+                        </div>
+
+
+                        <div class="form-group">
+                          <label>Serving Size in Grams <span style="color: red;">*</span> </label>
+                          <input type="number" class="form-control" placeholder="Enter Serving">
+                        </div>
+
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Is this supplement being promoted?</label>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Price in Points<span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Price">
+                        </div>
+
+                      </div>
+
+
+                      <div class="col-md-12 md-1 text-center mt-3">
+                        <button class="btn btn-success mx-1">Submit</button>
+                        <button class="btn btn-secondary mx-1">Cancel</button>
                       </div>
                     </div>
-
-                    <div class="form-group">
-                      <label>Price in Points<span style="color: red;">*</span> </label>
-                      <input type="text" class="form-control" placeholder="Enter Price">
-                    </div>
-
-                  </div>
-
-
-                  <div class="col-md-12 md-1 text-center mt-3">
-                    <button class="btn btn-success mx-1">Submit</button>
-                    <button class="btn btn-secondary mx-1">Cancel</button>
-                  </div>
+                  </form>
                 </div>
-              </form>
+
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                <div class="card-header pb-0">
+                  <h5 class="card-title">Add New Flavour</h5>
+                  <p class="mb-0">All mandatory fields are marked with a red asterisk <span style="color: red;">*</span>
+                  </p>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Supplement No. <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="" disabled>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Manufacturer Name <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Manufacturer Name ">
+                        </div>
+
+                        <div class="form-group">
+                          <label>Name <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Name ">
+                        </div>
+
+
+                        <div class="form-group">
+                          <label>Powder type<span style="color: red;">*</span> </label>
+                          <select class="form-control" name="type" id="type" required="">
+                            <option value="" hidden>-Select-</option>
+                            <option value="protein">Protein</option>
+                            <option value="pre workout">Pre Workout</option>
+                            <option value="post workout">Post Workout</option>
+                            <option value="aminos">Aminos</option>
+                            <option value="energizer">Energizer</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Price in AUD <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Price">
+                        </div>
+
+
+                        <div class="form-group">
+                          <label>Cost in AUD <span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Cost">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Description </label>
+                          <textarea class="form-control" rows="3" placeholder="Enter Description "></textarea>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Flavour <span style="color: red;">*</span> </label>
+                          <select class="form-control mr-2" name="flavour" id="flavours" required="">
+                            <option value="" hidden>-Select-</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="mango madness">Mango Madness</option>
+                            <option value="strawberry watermelon">Strawberry Watermelon</option>
+                            <option value="fruit punch">Fruit Punch</option>
+                            <option value="green apple">Green Apple</option>
+                            <option value="chocolate bliss">Chocolate Bliss</option>
+                            <option value="apple">Apple</option>
+                            <option value="turbo chocolate">Turbo Chocolate</option>
+                            <option value="blue raz">Blue Raz</option>
+                            <option value="vanilla">Vanilla</option>
+                          </select>
+                        </div>
+
+
+                        <div class="form-group">
+                          <label>Serving Size in Grams <span style="color: red;">*</span> </label>
+                          <input type="number" class="form-control" placeholder="Enter Serving">
+                        </div>
+
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Is this supplement being promoted?</label>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Price in Points<span style="color: red;">*</span> </label>
+                          <input type="text" class="form-control" placeholder="Enter Price">
+                        </div>
+
+                      </div>
+
+
+                      <div class="col-md-12 md-1 text-center mt-3">
+                        <button class="btn btn-success mx-1">Submit</button>
+                        <button class="btn btn-secondary mx-1">Cancel</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
             </div>
 
           </div>

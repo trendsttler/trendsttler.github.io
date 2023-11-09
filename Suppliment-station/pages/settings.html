@@ -370,7 +370,8 @@
           </a>
         </div>
         <nav aria-label="breadcrumb" class="nav-title">
-          <h4 class="font-weight-bolder mb-0">Settings</h4>
+          <h4 class="font-weight-bolder mb-0">Create</h4>
+          <h6 class="font-weight-bolder mb-0">Settings / Create</h6>
         </nav>
         <div class="collapse navbar-collapse  mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
 
@@ -431,72 +432,66 @@
           <div class="card">
             <div class="card-body pt-0">
 
+              
               <div class="settings-table">
-                <table class="table  table-striped align-items-center justify-content-center mb-0" id="transaction"
+                <div class="table-notes">Notes:- This section is for working notes</div>
+                
+                <table class="table table-bordered table-striped align-items-center justify-content-center mb-0" id="transaction"
                   width="100%" cellspacing="0">
                   <colgroup>
                   </colgroup>
                   <thead>
                     <tr class="top-multiplier">
                       <th data-orderable="false">
-                        <div
-                          style="border: 2px solid #eee; border: 2px solid #676767; padding: .75rem; margin-top: 1rem;">
                           Top-up amount
-                        </div>
+                      </th>
+                      <th data-orderable="false">
+                          Multiplier
+                      </th>
+                      <th data-orderable="false">
+                          Points
+                      </th>
+                      <th data-orderable="false">
+                          Bonus in %
+                      </th>
+                      <th data-orderable="false">
+                          Total Points
+                      </th data-orderable="false">
+                      <th>
+                          Action
+                      </th>
+                    </tr>
+
+                  </thead>
+
+                  <tbody>
+                    <tr class="multiplier-content">
+                      <td>
                         <input type="hidden" name="id">
-                        <select name="topup_amount" class="form-control mt-3">
+                        <select name="topup_amount" class="form-control">
                           <option value="30">30</option>
                           <option value="50">50</option>
                           <option value="100">100</option>
                           <option value="150">150</option>
-                        </select>
-                      </th>
-                      <th data-orderable="false">
-                        <div
-                          style="border: 2px solid #eee; border: 2px solid #676767; padding: .75rem; margin-top: 1rem;">
-                          Multiplier
-                        </div>
-                        <input type="number" name="multiplier" class="form-control mt-3">
-                      </th>
-                      <th data-orderable="false">
-                        <div
-                          style="border: 2px solid #eee; border: 2px solid #676767; padding: .75rem; margin-top: 1rem;">
-                          Points
-                        </div>
-                        <input type="number" name="points" class="form-control mt-3" disabled>
-                      </th>
-                      <th data-orderable="false">
-                        <div
-                          style="border: 2px solid #eee; border: 2px solid #676767; padding: .75rem; margin-top: 1rem;">
-                          Bonus in %
-                        </div>
-                        <input type="number" name="bonus" class="form-control mt-3" value="0">
-                      </th>
-                      <th data-orderable="false">
-                        <div
-                          style="border: 2px solid #eee; border: 2px solid #676767; padding: .75rem; margin-top: 1rem;">
-                          Total Points
-                        </div>
-                        <input type="number" name="total_points" class="form-control mt-3" disabled>
-                      </th data-orderable="false">
-                      <th>
-                        <div
-                          style="border: 2px solid #eee; border: 2px solid #676767; padding: .75rem; margin-top: 1rem;">
-                          Action
-                        </div>
+                        </select></td>
+                      <td>
+                        <input type="number" name="multiplier" class="form-control ">
+                      </td>
+                      <td>
+                        <input type="number" name="points" class="form-control" disabled>
+                      </td>
+                      <td>
+                        <input type="number" name="bonus" class="form-control" value="0">
+                      </td>
+                      <td>
+                        <input type="number" name="total_points" class="form-control" readonly>
+                      </td>
+                      <td>
                         <button type="button" id="store_settings"
-                          class="btn btn-secondary form-control mt-3 mb-0">Save</button>
-                      </th>
-                    </tr>
+                          class="btn btn-secondary form-control mt-0 mb-0">Save</button>
 
-                    <tr>
-                      <th colspan="6" style="border-top:0; text-align: left !important;padding-left: 0;" rowspan="1">
-                        <h5>Current</h5>
-                      </th>
+                      </td>
                     </tr>
-                  </thead>
-
-                  <tbody>
                     <tr>
                       <td>AU$ 30</td>
                       <td>1</td>
