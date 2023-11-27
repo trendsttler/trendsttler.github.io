@@ -742,7 +742,7 @@ table.dataTable.table-striped > tbody > tr.even > * {
   }
   .table-download #pdf-download,
   .table-download #excel-download {
-    padding: 5px 8px !important;
+    padding: 5px 8px;
   }
   .table-download #pdf-download i,
   .table-download #excel-download i {
