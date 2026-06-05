@@ -1,63 +1,1108 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Karan soni</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,800|PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous">
-    <!-- User define custom css -->
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karan Soni | Senior Frontend Engineer</title>
+  <meta name="description" content="Portfolio of Karan Soni, Senior Frontend Engineer specializing in React, TypeScript, GraphQL, AEM, accessibility, SaaS dashboards, and high-performance web applications." />
+  <meta name="keywords" content="Karan Soni, Senior Frontend Engineer, React Developer, TypeScript Developer, GraphQL, AEM Developer, WCAG, Frontend Portfolio, Brampton Canada" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+:root {
+  --bg: #070912;
+  --bg-soft: #0d1020;
+  --panel: rgba(255, 255, 255, 0.07);
+  --panel-strong: rgba(255, 255, 255, 0.12);
+  --text: #f7f8ff;
+  --muted: #a8afc7;
+  --line: rgba(255, 255, 255, 0.15);
+  --brand: #7c5cff;
+  --brand-2: #18e3c8;
+  --brand-3: #ffb86b;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --radius-xl: 32px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --max: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(124, 92, 255, 0.30), transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(24, 227, 200, 0.18), transparent 28%),
+    radial-gradient(circle at 60% 90%, rgba(255, 184, 107, 0.15), transparent 30%),
+    var(--bg);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  opacity: 0.5;
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.site-header {
+  position: sticky;
+  top: 18px;
+  z-index: 10;
+  width: min(var(--max), calc(100% - 32px));
+  margin: 18px auto 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(7, 9, 18, 0.70);
+  backdrop-filter: blur(18px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+.logo span {
+  color: #071011;
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+}
+
+.nav a {
+  color: var(--muted);
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.nav a:hover {
+  color: var(--text);
+  background: var(--panel);
+}
+
+.header-cta {
+  padding: 13px 20px;
+  border-radius: 999px;
+  background: #fff;
+  color: #080a12;
+  font-weight: 800;
+  transition: 0.25s ease;
+}
+
+.header-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.18);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  width: 46px;
+  height: 46px;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  background: #fff;
+  margin: 7px;
+}
+
+.section {
+  width: min(var(--max), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 110px 0;
+}
+
+.hero {
+  min-height: calc(100vh - 80px);
+  display: grid;
+  grid-template-columns: 1.1fr 0.7fr;
+  align-items: center;
+  gap: 54px;
+  padding-top: 80px;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  color: var(--brand-2);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+}
+
+h1, h2, h3 {
+  font-family: "Space Grotesk", Inter, sans-serif;
+  letter-spacing: -0.055em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(3.2rem, 8vw, 7.4rem);
+  line-height: 0.9;
+  max-width: 900px;
+}
+
+.hero-subtitle {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.8;
+  max-width: 760px;
+  margin: 28px 0 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 24px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-weight: 850;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.btn.primary {
+  color: #06100f;
+  background: linear-gradient(135deg, var(--brand-2), #f9fffc);
+}
+
+.btn.secondary {
+  background: var(--panel);
+  color: var(--text);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.hero-proof {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 46px;
+  max-width: 760px;
+}
+
+.hero-proof div {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--panel);
+}
+
+.hero-proof strong {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: -0.06em;
+}
+
+.hero-proof span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03)),
+    rgba(13, 16, 32, 0.8);
+  border-radius: var(--radius-xl);
+  padding: 34px;
+  box-shadow: var(--shadow);
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-glow {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(124, 92, 255, 0.55), transparent 70%);
+  top: -80px;
+  right: -80px;
+  filter: blur(8px);
+}
+
+.profile-orbit {
+  position: absolute;
+  inset: 38px 26px auto;
+  height: 260px;
+  display: grid;
+  place-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  border-radius: 46px;
+  background: linear-gradient(135deg, #fff, #dfe3ff);
+  color: #080a12;
+  font-size: 3rem;
+  font-weight: 950;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.4);
+}
+
+.orbit {
+  position: absolute;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid var(--line);
+  font-weight: 800;
+  color: var(--text);
+  animation: float 5s ease-in-out infinite;
+}
+
+.orbit.one { top: 8px; left: 42px; }
+.orbit.two { right: 34px; top: 88px; animation-delay: 1s; }
+.orbit.three { bottom: 18px; left: 92px; animation-delay: 2s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+.hero-card h2 {
+  font-size: 2.4rem;
+  margin: 260px 0 8px;
+}
+
+.hero-card p,
+.hero-card li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.hero-card ul {
+  padding-left: 18px;
+  margin: 18px 0 0;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  background: rgba(255,255,255,0.04);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  padding: 18px 0;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 18px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.section-heading {
+  max-width: 780px;
+  margin-bottom: 42px;
+}
+
+.section-heading h2,
+.cta-panel h2 {
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.section-heading p:not(.eyebrow),
+.cta-panel p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 18px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: var(--radius-lg);
+  transition: 0.25s ease;
+}
+
+.timeline-item:hover,
+.project-card:hover,
+.skill-panel:hover {
+  transform: translateY(-6px);
+  border-color: rgba(24, 227, 200, 0.45);
+  background: var(--panel-strong);
+}
+
+.year {
+  display: inline-flex;
+  margin-bottom: 14px;
+  color: var(--brand-3);
+  font-weight: 850;
+}
+
+.timeline-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.timeline-item p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: -16px 0 28px;
+}
+
+.filter {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--muted);
+  padding: 12px 18px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.filter.active,
+.filter:hover {
+  color: #06100f;
+  background: var(--brand-2);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.project-card {
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+  transition: 0.25s ease;
+}
+
+.project-card.featured {
+  grid-column: span 2;
+  background:
+    radial-gradient(circle at top right, rgba(124, 92, 255, 0.35), transparent 40%),
+    linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+}
+
+.project-top {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 26px;
+}
+
+.project-top span {
+  color: var(--brand-2);
+  font-weight: 900;
+}
+
+.project-top small {
+  color: var(--muted);
+  text-align: right;
+  line-height: 1.4;
+}
+
+.project-card h3 {
+  font-size: 1.7rem;
+  margin: 0 0 12px;
+}
+
+.project-card p,
+.project-card li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.project-card ul {
+  padding-left: 18px;
+  margin: auto 0 0;
+}
+
+.skill-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.skill-panel {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--panel);
+  transition: 0.25s ease;
+}
+
+.skill-panel h3 {
+  margin-top: 0;
+  font-size: 1.55rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips span {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(255,255,255,0.04);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.cta-panel {
+  padding: clamp(30px, 6vw, 70px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(24, 227, 200, 0.22), transparent 35%),
+    radial-gradient(circle at 90% 10%, rgba(124, 92, 255, 0.30), transparent 32%),
+    rgba(255,255,255,0.07);
+  box-shadow: var(--shadow);
+}
+
+.footer {
+  width: min(var(--max), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0 60px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.footer div {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.footer a {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .hero,
+  .skill-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 70px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card.featured {
+    grid-column: span 1;
+  }
+
+  .hero-card {
+    min-height: 470px;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    border-radius: 26px;
+    align-items: flex-start;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 12px;
+    right: 12px;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: rgba(7, 9, 18, 0.95);
+    flex-direction: column;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .hero-proof,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 16vw, 4.8rem);
+  }
+
+  .hero-card {
+    padding: 24px;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+
+  .footer div {
+    flex-direction: column;
+  }
+}
+
+</style>
 </head>
 
 <body>
-    <section class="section container-fluid align-center">
-        <div class="row">
-            <div class="col-md-6 align-center">
-                <div class="banner-image">
-                    <img Alt="Karan Soni Rj13" src="images/logo.png" />
-                </div>
-            </div>
-            <div class="col-md-6 align-center flex-column">
-                <div class="admin-detail ">
-                    <h1>Karan Soni</h1>
-                    <h3>Full Stack Designer</h3>
-                    <p class="bref">
-                        I've 5+ Years of Expereance in this Field.<br>
-                        I'm Providing All design stuff AS per UI/UX Design, Web Design,
-                        2D Animation, Mobile Responsive Website.
-                    </p>
-                </div><!-- Admin detail -->
+  <div id="particles-js" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
 
-                <div class="contact-me">
-                    <form action="mailto:karansonirj13@gmail.com" method="GET">
-                        <a target="_blank" href="mailto:karansonirj13@gmail.com" class="btn btn-contact">
-                           <span> Get Connected</span>
-                        </a>
-                    </form>
-                </div>
-                <div class="social-links">
-                    <a class="social si-f" target="_blank" href="https://wa.link/4cofhm"> <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a class="social si-i" target="_blank" href="https://www.instagram.com/itskaran.ai/"> <i class="fab fa-instagram "></i>
-                    </a>
-                    <a class="social si-t" target="_blank" href="https://www.behance.net/trendsttler"> <i class="fab fa-behance "></i>
-                    </a>
-                    <a class="social si-li" target="_blank" href="https://www.linkedin.com/in/itskaransoni/"> <i class="fab fa-linkedin"></i>
-                    </a>
-                </div><!--social-links-->
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Karan Soni portfolio home">
+      <span>K</span>S
+    </a>
 
-            </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="header-cta" href="mailto:itssonikaran@gmail.com">Hire Me</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content animate__animated animate__fadeInUp">
+        <p class="eyebrow">Senior Frontend Engineer · React / TypeScript / GraphQL</p>
+        <h2>
+          I build fast, accessible, product-driven interfaces that feel premium and perform at scale.
+        </h2>
+        <p class="hero-subtitle">
+          6+ years building SaaS dashboards, enterprise portals, AEM components, vehicle configurators,
+          and high-performance frontend systems with clean architecture, WCAG alignment, and measurable impact.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary magnetic" href="#projects">View Projects</a>
+          <a class="btn secondary magnetic" href="mailto:itskaransoni09@gmail.com">Let’s Talk</a>
         </div>
-    </section>
-<script data-ad-client="ca-pub-7317196704005033" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</body>
 
+        <div class="hero-proof">
+          <div>
+            <strong>500K+</strong>
+            <span>MAU platform experience</span>
+          </div>
+          <div>
+            <strong>85%+</strong>
+            <span>test coverage track record</span>
+          </div>
+          <div>
+            <strong>40%</strong>
+            <span>load-time improvement</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card animate__animated animate__fadeInRight">
+        <div class="card-glow"></div>
+        <div class="profile-orbit">
+          <div class="avatar">KS</div>
+          <span class="orbit one">React</span>
+          <span class="orbit two">AEM</span>
+          <span class="orbit three">WCAG</span>
+        </div>
+        <h2>Karan Soni</h2>
+        <p>Senior Frontend Engineer based in Brampton, ON</p>
+        <ul>
+          <li>Product-minded frontend architecture</li>
+          <li>Accessible UI component systems</li>
+          <li>GraphQL, SaaS dashboards & AEM delivery</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="marquee" aria-label="Technology highlights">
+      <div class="marquee-track">
+        <span>React</span><span>TypeScript</span><span>GraphQL</span><span>AEM</span><span>Redux</span><span>Jest</span><span>Cypress</span><span>WCAG AA</span><span>Chakra UI</span><span>Angular</span>
+        <span>React</span><span>TypeScript</span><span>GraphQL</span><span>AEM</span><span>Redux</span><span>Jest</span><span>Cypress</span><span>WCAG AA</span><span>Chakra UI</span><span>Angular</span>
+      </div>
+    </section>
+
+    <section id="work" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Professional Impact</p>
+        <h2>Frontend engineering with business outcomes.</h2>
+        <p>
+          I focus on shipping interfaces that are scalable for teams, useful for users, and measurable for business.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="year">Dec 2024 — Present</span>
+          <h3>Senior Frontend Engineer · Veracity Software Inc.</h3>
+          <p>
+            Led frontend delivery for Maple, a multi-role SaaS platform with Doctor, Patient, and Admin dashboards
+            across 8 modules. Improved initial load time by 40%, reduced bundle size by ~30%, and maintained 85%+ test coverage.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <span class="year">Nov 2021 — Jul 2024</span>
+          <h3>Lead Software Engineer · Bacancy Software LLP</h3>
+          <p>
+            Owned frontend architecture across enterprise projects including KPMG Canada and Nissan Motors, building
+            reusable component systems, WCAG AA-compliant UI, and high-performance React/AEM applications.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <span class="year">Sep 2018 — Nov 2021</span>
+          <h3>Frontend Developer · PiZone Infotech Solutions</h3>
+          <p>
+            Converted Figma and Adobe XD designs into pixel-perfect responsive interfaces across 20+ client projects
+            while optimizing GraphQL queries and cross-browser workflows.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>Case-study style project work.</h2>
+        <p>Enterprise builds, SaaS products, booking systems, analytics dashboards, and experience-focused websites.</p>
+      </div>
+
+      <div class="project-filter" role="tablist" aria-label="Project filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="enterprise">Enterprise</button>
+        <button class="filter" data-filter="dashboard">Dashboard</button>
+        <button class="filter" data-filter="design">Design</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured" data-category="enterprise dashboard">
+          <div class="project-top">
+            <span>Nissan Motors</span>
+            <small>React · TypeScript · GraphQL · AEM</small>
+          </div>
+          <h3>Vehicle Configurator SPA</h3>
+          <p>
+            Built exterior and warranty sections for a complex car configuration system, enabling users to explore
+            vehicle options in a seamless single-page journey without breaking context.
+          </p>
+          <ul>
+            <li>Real-time frontend/backend integration using GraphQL and Redux</li>
+            <li>Accessible UI implementation aligned with WCAG standards</li>
+            <li>Jest test cases for reusable and business-critical components</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="enterprise">
+          <div class="project-top">
+            <span>KPMG Canada</span>
+            <small>React · AEM · AJAX · Jest</small>
+          </div>
+          <h3>Accessible Enterprise Portal</h3>
+          <p>
+            Integrated reusable AEM components, rebuilt interactive UI elements, and delivered dashboard and gated
+            content experiences supported by AJAX and Elasticsearch interactions.
+          </p>
+          <ul>
+            <li>WCAG AA testing with Lighthouse, Pa11y, AXE, Wave, W3A</li>
+            <li>Accessibility coverage for voiceover, tabbing, color, images, and 200% zoom</li>
+            <li>Reusable buttons, inputs, links, and select interactions</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="dashboard">
+          <div class="project-top">
+            <span>FundsAiQ</span>
+            <small>Angular · TypeScript · Chart.js</small>
+          </div>
+          <h3>Fund Analytics Website</h3>
+          <p>
+            Developed an Angular-based financial website with user-centric design and complex API integrations for
+            multiple fund data structures.
+          </p>
+          <ul>
+            <li>Graph, bar chart, and pie chart visualizations</li>
+            <li>Optimized to 98% for accessibility and performance</li>
+            <li>Responsive, data-heavy interface architecture</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="design">
+          <div class="project-top">
+            <span>Groove Sense</span>
+            <small>Angular · Lottie · UX Research</small>
+          </div>
+          <h3>AI Music Party Platform</h3>
+          <p>
+            Designed and prototyped an AI-based DJ music system that lets users host parties and sync playlists from
+            different music apps.
+          </p>
+          <ul>
+            <li>Initial UI design, UX research, and product flow</li>
+            <li>Vector animations using Lottie</li>
+            <li>Minimal website using fullpage.js and wow.js</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="design">
+          <div class="project-top">
+            <span>Orevon</span>
+            <small>React · GraphQL · Strapi</small>
+          </div>
+          <h3>Pixel-Perfect Marketing Website</h3>
+          <p>
+            Built a polished React website with pixel-perfect SCSS implementation and a structured blogging system
+            powered by Strapi.
+          </p>
+          <ul>
+            <li>Frontend CMS integration</li>
+            <li>GraphQL-based content delivery</li>
+            <li>Modern responsive layouts</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="enterprise">
+          <div class="project-top">
+            <span>Evintra</span>
+            <small>HTML · JavaScript · AJAX</small>
+          </div>
+          <h3>Event Calendar Experience</h3>
+          <p>
+            Created an event calendar page with dynamic listings, using AJAX to fetch and update event data for a
+            smoother browsing experience.
+          </p>
+          <ul>
+            <li>Dynamic event list rendering</li>
+            <li>Lightweight JavaScript implementation</li>
+            <li>Improved event discovery interface</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="design">
+          <div class="project-top">
+            <span>Majestic Train India</span>
+            <small>React · HTML · SCSS</small>
+          </div>
+          <h3>Luxury Train Booking Website</h3>
+          <p>
+            Created a private train booking website inspired by Rajasthan’s traditional visual language to make the
+            travel experience feel premium and culturally rooted.
+          </p>
+          <ul>
+            <li>Traditional design direction</li>
+            <li>Responsive booking-focused interface</li>
+            <li>React-based frontend implementation</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="dashboard">
+          <div class="project-top">
+            <span>Maple SaaS</span>
+            <small>React · Zod · Chakra UI · Cypress</small>
+          </div>
+          <h3>Healthcare Multi-Role Platform</h3>
+          <p>
+            Built dashboards and workflows for doctors, patients, and admins with complex forms, validation systems,
+            reusable components, and continuous test coverage.
+          </p>
+          <ul>
+            <li>3 dashboards and 8 feature modules</li>
+            <li>~50% manual workflow reduction</li>
+            <li>Lazy loading, code splitting, and state optimization</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Edge</p>
+        <h2>Built for modern frontend teams.</h2>
+      </div>
+
+      <div class="skill-layout">
+        <div class="skill-panel">
+          <h3>Core Engineering</h3>
+          <div class="chips">
+            <span>React.js</span><span>TypeScript</span><span>GraphQL</span><span>Redux</span><span>Next.js</span><span>Angular</span><span>REST APIs</span><span>WebSocket</span>
+          </div>
+        </div>
+
+        <div class="skill-panel">
+          <h3>Quality & Accessibility</h3>
+          <div class="chips">
+            <span>Jest</span><span>Cypress</span><span>TDD</span><span>WCAG AA</span><span>AXE</span><span>Lighthouse</span><span>Pa11y</span><span>Cross-browser QA</span>
+          </div>
+        </div>
+
+        <div class="skill-panel">
+          <h3>Design Systems & Delivery</h3>
+          <div class="chips">
+            <span>AEM</span><span>Chakra UI</span><span>Tailwind CSS</span><span>Material UI</span><span>SCSS</span><span>Figma</span><span>BuildKite</span><span>GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="cta-panel">
+        <p class="eyebrow">Available for frontend opportunities</p>
+        <h2>Need a frontend engineer who can own architecture, UX quality, and delivery?</h2>
+        <p>
+          I can help teams build scalable React products, accessible component systems, enterprise portals, and
+          conversion-focused experiences with polished interaction design.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary magnetic" href="mailto:itssonikaran@gmail.com">Email Me</a>
+          <a class="btn secondary magnetic" href="https://linkedin.com/in/imkaransoni" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <a href="mailto:itskaransoni09@gmail.com">itssonikaran@gmail.com</a>
+      <a href="tel:+16476499164">(647) 649-9164</a>
+      <a href="https://linkedin.com/in/imkaransoni" target="_blank" rel="noopener">linkedin.com/in/imkaransoni</a>
+    </div>
+    <p>© <span id="year"></span> Karan Soni. Designed for performance, accessibility, and product impact.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+const header = document.querySelector(".site-header");
+const nav = document.querySelector(".nav");
+const menuToggle = document.querySelector(".menu-toggle");
+const filters = document.querySelectorAll(".filter");
+const cards = document.querySelectorAll(".project-card");
+const reveals = document.querySelectorAll(".reveal");
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+menuToggle?.addEventListener("click", () => {
+  nav.classList.toggle("open");
+});
+
+document.querySelectorAll(".nav a").forEach((link) => {
+  link.addEventListener("click", () => nav.classList.remove("open"));
+});
+
+filters.forEach((button) => {
+  button.addEventListener("click", () => {
+    filters.forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+
+    const filter = button.dataset.filter;
+
+    cards.forEach((card) => {
+      const categories = card.dataset.category || "";
+      const shouldShow = filter === "all" || categories.includes(filter);
+      card.classList.toggle("hidden", !shouldShow);
+    });
+  });
+});
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+reveals.forEach((item) => revealObserver.observe(item));
+
+document.querySelectorAll(".magnetic").forEach((el) => {
+  el.addEventListener("mousemove", (event) => {
+    const rect = el.getBoundingClientRect();
+    const x = event.clientX - rect.left - rect.width / 2;
+    const y = event.clientY - rect.top - rect.height / 2;
+    el.style.transform = `translate(${x * 0.12}px, ${y * 0.16}px)`;
+  });
+
+  el.addEventListener("mouseleave", () => {
+    el.style.transform = "";
+  });
+});
+
+if (window.particlesJS) {
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 58, density: { enable: true, value_area: 900 } },
+      color: { value: ["#7c5cff", "#18e3c8", "#ffffff"] },
+      shape: { type: "circle" },
+      opacity: { value: 0.35, random: true },
+      size: { value: 3, random: true },
+      line_linked: {
+        enable: true,
+        distance: 145,
+        color: "#ffffff",
+        opacity: 0.10,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1.2,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "grab" },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        grab: { distance: 180, line_linked: { opacity: 0.25 } },
+        push: { particles_nb: 3 }
+      }
+    },
+    retina_detect: true
+  });
+}
+
+</script>
+</body>
 </html>
